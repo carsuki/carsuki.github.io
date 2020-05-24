@@ -119,3 +119,10 @@ a:hover {
 .credits a {
   color: rgba(255, 255, 255, 0.60);
 }
+
+/* mobile scaling */
+@media screen and (max-width: 768px) {
+  .body-container {
+      width: 95%;
+  }
+}
