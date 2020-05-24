@@ -124,5 +124,7 @@ a:hover {
 @media screen and (max-width: 768px) {
   .body-container {
       width: 95%;
+      margin-top: 2vh;
+      margin-bottom: 2vh;
   }
 }
