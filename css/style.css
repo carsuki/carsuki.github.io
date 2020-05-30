@@ -107,17 +107,26 @@ a:hover {
   border: 0px;
 }
 
-.credits {
+.credits,
+.footer-info {
   color: rgba(255, 255, 255, 0.60);
   text-align: center;
   margin-left: auto;
   margin-right: auto;
   margin-top: 0px;
-  margin-bottom: 2vh;
+  margin-bottom: 0px;
+}
+
+.credits {
+  margin-bottom: 1vh;
 }
 
 .credits a {
   color: rgba(255, 255, 255, 0.60);
+}
+
+.footer-info {
+  margin-bottom: 2vh;
 }
 
 /* mobile scaling */
