@@ -374,6 +374,11 @@ const randomgifs = [
       name: "JAVITOZEEK",
       gif: "img/gif/75.gif",
       link: "https://giphy.com/channel/JAVITOZEEK"
+    },
+    { 
+      name: "Omoide Poroporo",
+      gif: "img/gif/76.gif",
+      link: "https://myanimelist.net/anime/1029/Omoide_Poroporo"
     }
 ]
 

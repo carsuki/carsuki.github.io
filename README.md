@@ -3,3 +3,8 @@
 </p>
 <h1 align="center">carsuki</h1>
 <p align="center">“Developer interested in the web and iOS.”<br>—Man Who Does Not Exist</p>
+
+___
+
+<p align="center" style="opacity: 0.60"><i>everything on this repository written/created by myself (carsuki) is licensed under the MPL 2.0. other content⁠—including GIFs, images, cyberpunkwaifus font⁠—are owned by their creator(s), and i claim no ownership of them.
+</i></p>
