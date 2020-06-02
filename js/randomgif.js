@@ -384,7 +384,12 @@ const randomgifs = [
       name: "Dirty Pair",
       gif: "img/gif/77.gif",
       link: "https://myanimelist.net/anime/424/Dirty_Pair"
-    }
+    },
+    { 
+      name: "Valenberg for VirtuaVerse",
+      gif: "img/gif/78.gif",
+      link: "https://valenberg.tumblr.com"
+    },
 ]
 
 // select random gif
