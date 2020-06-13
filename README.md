@@ -6,5 +6,5 @@
 
 ___
 
-<p align="center" style="opacity: 0.60"><i>everything on this repository written/created by myself (carsuki) is licensed under the MPL 2.0. other content⁠—including GIFs, images, cyberpunkwaifus font⁠—are owned by their creator(s), and i claim no ownership of them.
+<p align="center" style="opacity: 0.60"><i>everything on this repository written/created by myself (carsuki) is licensed under the MPL 2.0. other content⁠—including GIFs, images (excluding: cover-generic.png, sukisplash.png), cyberpunkwaifus font⁠—are owned by their creator(s), and i claim no ownership of them.
 </i></p>
