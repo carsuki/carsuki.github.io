@@ -1,4 +1,3 @@
-// Docs on event and context https://www.netlify.com/docs/functions/#the-handler-method
 exports.handler = async (event, context) => {
   try {
     const subject = event.queryStringParameters.name || 'World'
@@ -13,3 +12,15 @@ exports.handler = async (event, context) => {
     return { statusCode: 500, body: err.toString() }
   }
 }
+
+var cache = new LastFMCache();
+
+var lastfm = new LastFM({
+  apiKey    : key,
+  apiSecret : secret,
+  cache     : cache
+});
+
+lastfm.artist.getInfo({artist: 'The xx'}, {success: function(data){
+}, error: function(code, message){
+}});
