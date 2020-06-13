@@ -1,2 +1,8 @@
+<<<<<<< HEAD
 [build]
 functions = "functions"
+=======
+version https://git-lfs.github.com/spec/v1
+oid sha256:155ee052899a6b115263f0f32802acfe19b3f14580b8c16a83687a5e5eaef355
+size 32
+>>>>>>> c078206504691b8a8082a3b7d78fafad9162463e
