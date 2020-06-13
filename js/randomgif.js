@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 // randomgif.js
 // with help from the Man
 // credit to the gifs go to their creators
@@ -402,8 +401,3 @@ document.getElementById('random').src = randomset.gif;
 // fill in the source text
 document.getElementsByClassName("source-label")[0].innerHTML = randomset.name;
 document.getElementsByClassName("source-label")[0].href=randomset.link
-=======
-version https://git-lfs.github.com/spec/v1
-oid sha256:895a89c052f4ea8a38e815b98887e9f6002a217d712b3430906238f9ba9f6b8f
-size 9601
->>>>>>> c078206504691b8a8082a3b7d78fafad9162463e

@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 Mozilla Public License Version 2.0
 ==================================
 
@@ -372,8 +371,3 @@ Exhibit B - "Incompatible With Secondary Licenses" Notice
 
   This Source Code Form is "Incompatible With Secondary Licenses", as
   defined by the Mozilla Public License, v. 2.0.
-=======
-version https://git-lfs.github.com/spec/v1
-oid sha256:1f256ecad192880510e84ad60474eab7589218784b9a50bc7ceee34c2b91f1d5
-size 16725
->>>>>>> c078206504691b8a8082a3b7d78fafad9162463e
