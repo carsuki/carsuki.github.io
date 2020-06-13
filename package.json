@@ -1,0 +1,23 @@
+{
+  "name": "carsuki.moe",
+  "version": "1.0.0",
+  "description": "carsuki website",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/carsuki/carsuki.github.io.git"
+  },
+  "author": "carsuki",
+  "license": "MPL-2.0",
+  "bugs": {
+    "url": "https://github.com/carsuki/carsuki.github.io/issues"
+  },
+  "homepage": "https://github.com/carsuki/carsuki.github.io#readme",
+  "dependencies": {
+    "dotenv": "^8.2.0"
+  }
+}
