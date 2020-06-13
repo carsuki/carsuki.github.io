@@ -78,18 +78,22 @@ a:hover {
 }
 
 .random-gif {
-  margin-top: 8vh;
-  margin-bottom: 8vh;
+  margin-top: 4vh;
+  margin-bottom: 4vh;
+}
+
+.random-gif img {
+  border: 2px solid #fff;
 }
 
 .random-gif img,
-.splash {
+.splash,
+.player-container {
   max-width: 80%;
   background-repeat: no-repeat;
   display: block;
   margin-left: auto;
   margin-right: auto;
-  border: 2px solid #fff;
 }
 
 .gif-label {
@@ -103,8 +107,8 @@ a:hover {
 }
 
 .splash {
+  margin-top: 4vh;
   margin-bottom: 4vh;
-  border: 0px;
 }
 
 .credits,
@@ -127,6 +131,70 @@ a:hover {
 
 .footer-info {
   margin-bottom: 2vh;
+}
+
+.player-container {
+  height: 100px;
+  min-width: 81%;
+  display: flex;
+}
+
+.cover-container {
+  max-width: 100px;
+  max-height: 100px;
+  float: left;
+}
+
+.player-info-container {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  flex-grow: 1;
+  max-width: 71%;
+  float: right;
+  margin-left: 2vh;
+}
+
+.player-cover {
+  max-height: 100px;
+  max-width: 100px;
+  border: 2px solid #fff;
+}
+
+.player-label {
+  display: inline-flex;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  align-items: center;
+}
+
+.header-label {
+  font-size: 16px;
+  min-height: 18px;
+  opacity: 0.6;
+}
+
+.title-label {
+  font-size: 20px;
+  min-height: 26px;
+}
+
+.title-label div {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.artist-label {
+  font-size: 20px;
+  min-height: 26px;
+}
+
+.album-label {
+  font-size: 16px;
+  min-height: 22px;
+  font-style: italic;
 }
 
 /* mobile scaling */
