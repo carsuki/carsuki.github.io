@@ -29,10 +29,20 @@
   <script src="js/randomgif.js" defer></script>
   <script src="js/musicplayer.js"></script>
   <script src="js/modal.js" defer></script>
+  <script src="js/eyeballtools.js" defer></script>
+
+  <script type="text/javascript" src="js/rocket.12.06.js"></script>
+  <script type="text/javascript" src="js/seedrandom.js"></script>
+  <script type="text/javascript" src="js/minesweeper.js"></script>
+  <script type="text/javascript" src="js/tile.js"></script>
+  <script type="text/javascript" src="js/face.js"></script>
+  <script type="text/javascript" src="js/grid.js"></script>
+  <script type="text/javascript" src="js/ssd.js"></script>
+  <link rel="stylesheet" href="css/minesweeper.css">
 </head>
 
 <body>
-  <div class="body-container">
+  <div class="body-container" id="body-container">
     <img class="header-img" src="img/eyeball.png">
     <p class="name-header">carsuki</p>
     <p class="main-body">
@@ -44,8 +54,10 @@
       <a class="social-link" href="https://youtube.com/c/carsuki"><i class="fab fa-youtube" id="social-icon"></i></a>
     </div>
     <div class="random-gif">
-      <img id="random">
-      <p class="gif-label"><i>Today's Selection</i><span> <i>(</i><a class="source-label" href="#"></a><i>)</i></span></p>
+      <div class="gif-container" id="gif-container">
+        <img id="random">
+      </div>
+      <p class="gif-label"><i>Today's Selection</i><span id="label-span"> <i>(</i><a id="source-label" class="source-label" href="#"></a></span><i>)</i></p>
     </div>
     <div class="player-container">
       <div class="cover-container">
@@ -63,8 +75,31 @@
       </div>
     </div>
     <img class="splash" src="img/sukisplash.png">
-    <p class="credits">carsuki '20 - <a href="https://github.com/carsuki/carsuki.github.io/">page source</a> - <a id="modal-open" style="text-decoration:underline;cursor:pointer;">acknowledgements</a></p>
-    <div class="modal">
+    <p class="credits">carsuki '20 - <a href="https://github.com/carsuki/carsuki.github.io/">page source</a> - <a id="opener2" class="opener" style="text-decoration:underline;cursor:pointer;">acknowledgements</a></p>
+
+    <div id="sweeper-modal" class="modal">
+      <div class="modal-content">
+        <table cellpadding="0" cellspacing="0" style="width: 100%;">
+          <tr>
+            <td style="text-align: center;"><h1>Minesweeper</h1></td>
+          </tr>
+          <tr>
+            <td style="padding-bottom: 25px; text-align: center;">
+              <button style="width: 100px;" id="button_beginner">Beginner</button> <button style="width: 100px;" id="button_intermediate">Intermediate</button> <button style="width: 100px;" id="button_expert">Expert</button>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div id="play_area"></div>
+            </td>
+          </tr>
+        </table>
+        </table>
+        <span class="close" style="margin-top: 1vh;">close</span>
+      </div>
+    </div>
+
+    <div id="acknowledgements-modal" class="modal">
       <div class="modal-content">
         <span class="modal-header">acknowledgements</span>
         <br>
@@ -83,11 +118,16 @@
         <span class="modal-subheader">'Now Playing' powered by <a href="https://last.fm">AudioScrobbler</a></span>
         <br>
         <br>
+        <div class="modal-buttons">
+          <a class="modal-button" onclick="eyeballPulsar()"><img src="img/buttons/carsuki_now_red.gif"></a>
+          <a class="modal-button" href="https://waifubartending.com"><img src="img/buttons/button_alc.gif"></a>
+          <a class="modal-button" id="chroma"><img src="img/buttons/button_16b.gif"></a>
+        </div>
         <div class="fineprint-container">
           <span class="modal-fineprint">everything on this website written/created by myself (carsuki) is licensed under the MPL 2.0, with this exception: no individual named "pwn20wnd" or anything similar may use anything on this website (and the accompanying github repository) that i have created.</span>
         </div>
         <br>
-        <span class="modal-close">close</span>
+        <span class="close">close</span>
       </div>
     </div>
   </div>

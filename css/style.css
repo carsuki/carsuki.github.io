@@ -1,12 +1,12 @@
 /* font import */
 @font-face {
   font-family: Micro Sans;
-  src: url('../font/micro-sans.ttf');
+  src: url("../font/micro-sans.ttf");
 }
 
 @font-face {
   font-family: CyberpunkWaifus;
-  src: url('../font/CyberpunkWaifus.woff');
+  src: url("../font/CyberpunkWaifus.woff");
 }
 
 /* rest of style starts here */
@@ -35,6 +35,20 @@ body {
   display: block;
   margin-left: auto;
   margin-right: auto;
+}
+
+.pulsing {
+  width: 70%;
+  margin-top: 4vh;
+  margin-bottom: 2vh;
+  min-width: 300px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  animation: pulse 3s infinite;
+  animation-direction: alternate;
+  -webkit-animation-name: pulse;
+  animation-name: pulse;
 }
 
 .name-header {
@@ -82,10 +96,21 @@ a:hover {
 }
 
 .random-gif img {
-  border: 2px solid #fff;
+  display: block;
+  max-width: 100%;
+  margin: 0;
 }
 
-.random-gif img,
+.gif-container {
+  border: 2px solid #fff;
+  display: block;
+  margin: 0 auto;
+  max-width: 80%;
+  height: auto;
+  text-align: center;
+  clear: both;
+}
+
 .splash,
 .player-container {
   max-width: 80%;
@@ -112,7 +137,7 @@ a:hover {
 
 .credits,
 .footer-info {
-  color: rgba(255, 255, 255, 0.60);
+  color: rgba(255, 255, 255, 0.6);
   text-align: center;
   margin-left: auto;
   margin-right: auto;
@@ -125,7 +150,7 @@ a:hover {
 }
 
 .credits a {
-  color: rgba(255, 255, 255, 0.60);
+  color: rgba(255, 255, 255, 0.6);
 }
 
 .footer-info {
@@ -192,7 +217,7 @@ a:hover {
 
 .album-label {
   font-size: 16px;
-  max-height: 22px;
+  min-height: 22px;
   font-style: italic;
 }
 
@@ -206,19 +231,22 @@ a:hover {
   width: 100%;
   height: 100%;
   overflow: auto;
-  background-color: rgba(0,0,0,0.4);
+  background-color: rgba(0, 0, 0, 0.4);
 }
 
 .modal-content {
   background-color: #000;
   border: 4px solid #fff;
-  margin: 20vh auto;
+  margin: 18vh auto;
   padding: 20px;
+  padding-top: 2vh;
+  padding-bottom: 2vh;
   width: 20vw;
-  min-width: 300px;
+  min-width: 280px;
 }
 
 .modal-header {
+  font-family: Micro Sans;
   font-size: 20px;
   margin-bottom: 2vh;
 }
@@ -226,6 +254,14 @@ a:hover {
 .modal-subheader {
   font-size: 16px;
   font-style: italic;
+}
+
+.modal-buttons {
+  margin-bottom: 1vh;
+}
+
+.modal-button {
+  display: inline-block;
 }
 
 .fineprint-container {
@@ -236,7 +272,7 @@ a:hover {
   font-size: 8px;
   line-height: 80%;
   font-style: italic;
-  opacity: 0.60;
+  opacity: 0.6;
 }
 
 ul {
@@ -246,22 +282,116 @@ ul {
 }
 
 .modal-header,
-.modal-close {
+.close {
   width: 100%;
   display: inline-block;
   text-align: center;
 }
 
-.modal-close {
+.close {
   text-decoration: underline;
   cursor: pointer;
+}
+
+/* sweep modal styling */
+button {
+  background: black;
+  color: white;
+  font-family: CyberpunkWaifus;
+  font-size: 16px;
+  min-width: 120px;
+  border: 2px solid #fff;
+  padding: 0;
+  margin-bottom: 1vh;
+}
+
+#button_expert {
+  display: none;
+}
+
+#sweeper-modal > div:nth-child(1) > table:nth-child(1) > tbody:nth-child(1) > tr:nth-child(1) > td:nth-child(1),
+#sweeper-modal > div:nth-child(1) > table:nth-child(1) > tbody:nth-child(1) > tr:nth-child(2) > td:nth-child(1) {
+  padding-bottom: 1vh !important;
+}
+
+#sweeper-modal > div:nth-child(1) > table:nth-child(1) > tbody:nth-child(1) > tr:nth-child(1) > td:nth-child(1) > h1:nth-child(1) {
+  margin: 0;
+  font-size: 20px;
+  text-transform: lowercase;
+  font-family: Micro Sans;
+}
+
+#play_area > table:nth-child(1) {
+  border: 2px solid #fff !important;
+}
+
+#play_area > table:nth-child(1) > tbody:nth-child(1) > tr:nth-child(2) > td:nth-child(2) {
+  background: #000 !important;
+}
+
+#play_area > table:nth-child(1) > tbody:nth-child(1) > tr:nth-child(2) > td:nth-child(2) > table:nth-child(1) > tbody:nth-child(1) > tr:nth-child(1) > td:nth-child(1) > div:nth-child(1),
+#play_area > table:nth-child(1) > tbody:nth-child(1) > tr:nth-child(2) > td:nth-child(2) > table:nth-child(1) > tbody:nth-child(1) > tr:nth-child(1) > td:nth-child(3) > div:nth-child(1) {
+  background: none !important;
+}
+
+/* sweeper styling */
+.gif-container {
+  position: relative;
+}
+.sweeper-table {
+  width:100%;
+  min-height:100%;
+  z-index: 1;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* pulse animation */
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.1);
+  }
+  100% {
+    -webkit-transform: scale(1);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* shutdown animation */
+@keyframes shutdown {
+  0%, 46%   { transform: scale(1, 1); opacity: 1; }
+  50%       { transform: scale(1, 0.02); opacity: 0.8; }
+  55%, 100% { transform: scale(0, 0); opacity: 0.3; }
+}
+
+.shutdown {
+  animation-fill-mode: forwards;
+  animation: shutdown 3s linear;
+  opacity: 0;
+  display: block;
+  max-width: 100%;
+  margin: 0;
 }
 
 /* mobile scaling */
 @media screen and (max-width: 768px) {
   .body-container {
-      width: 95%;
-      margin-top: 1vh;
-      margin-bottom: 1vh;
+    width: 95%;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
   }
 }
