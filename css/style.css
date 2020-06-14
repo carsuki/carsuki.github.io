@@ -196,13 +196,13 @@ a:hover {
 
 .header-label {
   font-size: 16px;
-  min-height: 18px;
+  min-height: 22px;
   opacity: 0.6;
 }
 
 .title-label {
   font-size: 20px;
-  max-height: 26px;
+  min-height: 22px;
 }
 
 .title-label div {
