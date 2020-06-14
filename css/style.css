@@ -64,7 +64,6 @@ body {
 .social-link {
   font-size: 20px;
   text-decoration: none;
-  margin-right: 20px;
 }
 
 #social-icon {
@@ -178,7 +177,7 @@ a:hover {
 
 .title-label {
   font-size: 20px;
-  min-height: 26px;
+  max-height: 26px;
 }
 
 .title-label div {
@@ -188,13 +187,74 @@ a:hover {
 
 .artist-label {
   font-size: 20px;
-  min-height: 26px;
+  max-height: 26px;
 }
 
 .album-label {
   font-size: 16px;
-  min-height: 22px;
+  max-height: 22px;
   font-style: italic;
+}
+
+/* modal styling */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+  background-color: #000;
+  border: 4px solid #fff;
+  margin: 20vh auto;
+  padding: 20px;
+  width: 20vw;
+  min-width: 300px;
+}
+
+.modal-header {
+  font-size: 20px;
+  margin-bottom: 2vh;
+}
+
+.modal-subheader {
+  font-size: 16px;
+  font-style: italic;
+}
+
+.fineprint-container {
+  line-height: 50%;
+}
+
+.modal-fineprint {
+  font-size: 8px;
+  line-height: 80%;
+  font-style: italic;
+  opacity: 0.60;
+}
+
+ul {
+  padding-left: 20px;
+  padding-top: 0;
+  margin-top: 1vh;
+}
+
+.modal-header,
+.modal-close {
+  width: 100%;
+  display: inline-block;
+  text-align: center;
+}
+
+.modal-close {
+  text-decoration: underline;
+  cursor: pointer;
 }
 
 /* mobile scaling */
