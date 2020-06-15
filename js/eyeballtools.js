@@ -12,7 +12,6 @@ var clickState = 0;
 var chroma = document.getElementById('chroma');
 var image = document.getElementById('random');
 var source = document.getElementsByClassName("source-label")[0];
-var table = document.getElementsByClassName('sweeper-table');
 
 chroma.addEventListener('click', function() {
 
@@ -34,8 +33,6 @@ function eyeballTV() {
   image.setAttribute("class", "shutdown");
   setTimeout(() => { document.getElementById('gif-container').style.height = "0px";
     document.getElementById('gif-container').parentNode.removeChild(document.getElementById('gif-container'));
-    source.innerHTML = "";
-    node.innerHTML = "???";
-    node.style["font-style"] = "italic"; 
-    node.style["text-decoration"] = "underline" }, 1600);
+    source.innerHTML = "???";
+    source.href = "" }, 1600);
 }
