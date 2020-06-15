@@ -36,7 +36,7 @@ const randomgifs = [
       link: "https://myanimelist.net/anime/43/Koukaku_Kidoutai"
     },
     { 
-      name: "Pokémon",
+      name: "Pokemon",
       gif: "img/gif/7.gif",
       link: "https://myanimelist.net/anime/527/Pokemon"
     },
