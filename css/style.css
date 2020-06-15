@@ -2,11 +2,13 @@
 @font-face {
   font-family: Micro Sans;
   src: url("../font/micro-sans.ttf");
+  font-display: swap;
 }
 
 @font-face {
   font-family: CyberpunkWaifus;
   src: url("../font/CyberpunkWaifus.woff");
+  font-display: swap;
 }
 
 /* rest of style starts here */
