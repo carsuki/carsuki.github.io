@@ -226,9 +226,9 @@ const randomgifs = [
       link: "https://myanimelist.net/anime/16782/Kotonoha_no_Niwa"
     },
     { 
-      name: "The Garden of Words",
-      gif: "img/gif/45.gif",
-      link: "https://myanimelist.net/anime/16782/Kotonoha_no_Niwa"
+      name: "Dirty Pair",
+      gif: "img/gif/77.gif",
+      link: "https://myanimelist.net/anime/424/Dirty_Pair"
     },
     { 
       name: "Motocross Saito",
@@ -379,10 +379,5 @@ const randomgifs = [
       name: "Omoide Poroporo",
       gif: "img/gif/76.gif",
       link: "https://myanimelist.net/anime/1029/Omoide_Poroporo"
-    },
-    { 
-      name: "Dirty Pair",
-      gif: "img/gif/77.gif",
-      link: "https://myanimelist.net/anime/424/Dirty_Pair"
     }
 ]
