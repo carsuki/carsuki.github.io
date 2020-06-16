@@ -321,9 +321,9 @@ const randomgifs = [
       link: "https://lennsan.tumblr.com"
     },
     { 
-      name: "Kidmograph",
+      name: "Valenberg for VirtuaVerse",
       gif: "img/gif/65.gif",
-      link: "https://kidmograph.com"
+      link: "https://valenberg.tumblr.com"
     },
     { 
       name: "Cowboy Bebop",
@@ -384,10 +384,5 @@ const randomgifs = [
       name: "Dirty Pair",
       gif: "img/gif/77.gif",
       link: "https://myanimelist.net/anime/424/Dirty_Pair"
-    },
-    { 
-      name: "Valenberg for VirtuaVerse",
-      gif: "img/gif/78.gif",
-      link: "https://valenberg.tumblr.com"
-    },
+    }
 ]
