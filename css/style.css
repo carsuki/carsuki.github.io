@@ -69,6 +69,8 @@ body {
   text-align: center;
   margin-left: 20px;
   margin-right: 20px;
+  margin-bottom: 1vh;
+  line-height: 1.2;
 }
 
 .socials {
@@ -149,6 +151,7 @@ a:hover {
 
 .credits {
   margin-bottom: 1vh;
+  line-height: 1.2
 }
 
 .credits a {
@@ -167,8 +170,7 @@ a:hover {
 
 .cover-container {
   max-width: 100px;
-  max-height: 100px;
-  float: left;
+  flex: 1;
 }
 
 .player-info-container {
@@ -177,52 +179,55 @@ a:hover {
   align-content: center;
   flex-direction: column;
   flex-grow: 1;
-  max-width: 71%;
+  width: calc(100% - 120px);
   float: right;
-  margin-left: 2vh;
+  margin-left: 20px;
+  margin-top: 4px;
 }
 
 .player-cover {
-  max-height: 100px;
-  max-width: 100px;
+  width: 100px;
   border: 2px solid #fff;
 }
 
 .player-label {
-  display: inline-flex;
+  display: inline-block;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  align-items: center;
 }
 
 .header-label {
   font-size: 16px;
-  min-height: 22px;
+  height: 16px;
+  line-height: 16px;
   opacity: 0.6;
+  padding-bottom: 6px;
 }
 
 .title-label {
   font-size: 20px;
-  min-height: 22px;
-}
-
-.title-label div,
-.artist-label div,
-.album-label div {
-  overflow: hidden;
-  text-overflow: ellipsis;
+  height: 20px;
+  line-height: 20px;
 }
 
 .artist-label {
   font-size: 20px;
-  max-height: 26px;
+  height: 20px;
+  line-height: 20px;
+  padding-top: 4px;
+  padding-bottom: 4px;
 }
 
 .album-label {
   font-size: 16px;
-  min-height: 22px;
+  height: 16px;
+  line-height: 16px;
   font-style: italic;
+}
+
+.span-div {
+  display: inline-block;
 }
 
 /* modal styling */
@@ -375,27 +380,70 @@ button {
   }
 }
 
-/* shutdown animation */
-@keyframes shutdown {
-  0%, 46%   { transform: scale(1, 1); opacity: 1; }
-  50%       { transform: scale(1, 0.02); opacity: 0.8; }
-  55%, 100% { transform: scale(0, 0); opacity: 0.3; }
-}
-
-.shutdown {
-  animation-fill-mode: forwards;
-  animation: shutdown 3s linear;
-  opacity: 0;
-  display: block;
-  max-width: 100%;
-  margin: 0;
-}
-
 /* mobile scaling */
 @media screen and (max-width: 768px) {
   .body-container {
     width: 95%;
     margin-top: 1vh;
     margin-bottom: 1vh;
+  }
+
+  .header-img {
+    min-width: 80%;
+  }
+
+  .name-header {
+    font-size: 30px;
+  }
+
+  .main-body {
+    font-size: 16px;
+  }
+
+  .gif-label {
+    font-size: 12px;
+  }
+
+  .player-container {
+    height: 80px;
+  }
+
+  .cover-container,
+  .player-cover {
+    max-width: 75px;
+  }
+
+  .player-info-container {
+    height: 78px;
+    margin-left: 15px;
+    margin-top: 1px;
+    width: calc(100% - 95px);
+  }
+
+  .header-label {
+    padding-bottom: 4px;
+  }
+
+  .header-label,
+  .album-label {
+    font-size: 12px;
+    height: 12px;
+    line-height: 12px;
+  }
+
+  .title-label,
+  .artist-label {
+    font-size: 16px;
+    height: 16px;
+    line-height: 16px;
+  }
+
+  .artist-label {
+    padding-top: 2px;
+    padding-bottom: 2px;
+  }
+
+  .credits {
+    font-size: 12px;
   }
 }

@@ -227,8 +227,13 @@ const randomgifs = [
     },
     { 
       name: "Dirty Pair",
-      gif: "img/gif/77.gif",
+      gif: "img/gif/45.gif",
       link: "https://myanimelist.net/anime/424/Dirty_Pair"
+    },
+    { 
+      name: "Unknown",
+      gif: "img/gif/46.gif",
+      link: ""
     },
     { 
       name: "Motocross Saito",
