@@ -174,8 +174,7 @@ a:hover {
 }
 
 .player-container {
-  height: 100px;
-  min-width: 80.8%;
+  height: 104px;
   display: flex;
 }
 
