@@ -379,5 +379,10 @@ const randomgifs = [
       name: "JAVITOZEEK",
       gif: "img/gif/75.gif",
       link: "https://giphy.com/channel/JAVITOZEEK"
+    },
+    { 
+      name: "Valenberg",
+      gif: "img/gif/76.gif",
+      link: "https://valenberg.tumblr.com"
     }
 ]
