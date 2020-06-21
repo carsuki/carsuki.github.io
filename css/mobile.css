@@ -58,7 +58,8 @@
     padding-bottom: 2px;
   }
 
-  .credits {
+  .credits,
+  #opener2 {
     font-size: 12px;
   }
 }
