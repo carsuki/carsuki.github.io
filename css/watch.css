@@ -33,9 +33,21 @@
     display: none;
   }
 
+  .gif-container {
+    margin-bottom: 8vh;
+  }
+
+  .gif {
+    margin-top: 8vh;
+  }
+
   .gif figcaption {
     max-width: 100%;
     font-size: 20px;
+  }
+
+  .player {
+    height: 100px;
   }
 
   .player-container {
@@ -46,21 +58,21 @@
     max-width: 100px;
   }
 
-  .player-cover {
-    max-width: 100px;
+  .player-cover,
+  #cover {
+    max-width: 96px;
   }
 
-  .player-info-container {
-    margin-left: 12.5px;
-    width: calc(100% - 110px);
+  .player-info {
+    margin-left: 10px;
+    width: calc(100% - 105px);
   }
 
   .header-label,
   .album-label {
-    font-size: 16px;
-    height: 16px;
-    line-height: 16px;
-    padding-bottom: 6px;
+    font-size: 20px;
+    height: 20px;
+    line-height: 20px;
   }
 
   .title-label {
@@ -94,6 +106,7 @@
     min-width: 100%;
     margin-left: 0;
     margin-right: 0;
+    margin-top: 8vh;
   }
 
   .modal {
@@ -148,6 +161,11 @@
     display: none;
   }
 
+  footer:nth-child(5) > span:nth-child(1) > a:nth-child(3) {
+    margin-top: 4vh;
+  }
+
+  /* modal */
   .modal-content {
     margin-top: 15vh;
     margin-bottom: 8vh;
