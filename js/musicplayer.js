@@ -6,7 +6,7 @@ async function getData() {
   document.getElementById("title").innerHTML = recenttracks["track"][0]["name"];
   document.getElementById("artist").textContent = recenttracks["track"][0]["artist"]["#text"];
   document.getElementById("album").textContent = recenttracks["track"][0]["album"]["#text"];
-  document.getElementById("cover").src = recenttracks["track"][0]["image"][3]["#text"];
+  document.getElementById("cover").src = recenttracks["track"][0]["image"][2]["#text"];
 
 }
 getData();
