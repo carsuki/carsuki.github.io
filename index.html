@@ -24,12 +24,12 @@
   <meta name="twitter:image" content="https://carsuki.moe/img/eyeball-large.png">
   <meta name="twitter:card" content="summary_large_image">
 
-  <!-- styles -->
-  <link rel="preload" href="css/style.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-  <noscript><link rel="stylesheet" href="css/style.css"></noscript>
+  <!-- loadcss -->
+  <script src="js/loadcss.js"></script>
 
-  <link rel="preload" href="css/mobile.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-  <noscript><link rel="stylesheet" href="css/mobile.css"></noscript>
+  <!-- styles -->
+  <link rel="stylesheet" href="css/style.css" media="print" onload="this.media='all'; this.onload=null;">
+  <link rel="stylesheet" href="css/mobile.css" media="print" onload="this.media='all'; this.onload=null;">
 
   <!-- less critical styles -->
   <link rel="stylesheet" href="css/modal.css">
