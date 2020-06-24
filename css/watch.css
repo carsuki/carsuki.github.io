@@ -1,4 +1,8 @@
 @media screen and (max-width: 320px) {
+  * {
+    font-family: 'SF Pro Display', sans-serif !important;;
+  }
+
   main {
     border: 0px solid #fff;
     margin: 0;
@@ -94,6 +98,7 @@
 
   .modal {
     -webkit-backdrop-filter: blur(2pt);
+    backdrop-filter: blur(2pt);
   }
 
   .modal-content {
@@ -141,5 +146,25 @@
 
   #credits-divider {
     display: none;
+  }
+
+  .modal-content {
+    margin-top: 15vh;
+    margin-bottom: 8vh;
+  }
+
+  .modal h2 {
+    font-weight: bold;
+    font-size: 24px;
+  }
+
+  .modal h2,
+  .fineprint {
+    margin-top: 2vh;
+    margin-bottom: 4vh;
+  }
+
+  .modal h3 {
+    font-size: 18px;
   }
 }

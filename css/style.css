@@ -22,6 +22,12 @@ img {
   width: 100%;
 }
 
+a,
+a:visited,
+a:hover {
+  color: #fff;
+}
+
 main {
   width: 90%;
   max-width: 500px;
@@ -33,7 +39,7 @@ main {
   border-radius: 10px;
 }
 
-header figure {
+.header-img {
   width: 70%;
   margin-top: 4vh;
   margin-bottom: 2vh;
@@ -41,20 +47,6 @@ header figure {
   display: block;
   margin-left: auto;
   margin-right: auto;
-}
-
-.pulsing {
-  width: 70%;
-  margin-top: 4vh;
-  margin-bottom: 2vh;
-  min-width: 300px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  animation: pulse 3s infinite;
-  animation-direction: alternate;
-  -webkit-animation-name: pulse;
-  animation-name: pulse;
 }
 
 header h1 {
@@ -82,24 +74,28 @@ header h2 {
 }
 
 header div {
-  margin-left: 20px;
-  margin-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
   text-align: center;
+  height: 25px;
 }
 
 header div a {
-  font-size: 20px;
+  display: inline-block;
+}
+
+.social-icon,
+.social-icon img {
+  width: 25px;
+  height: 25px;
   text-decoration: none;
 }
 
 .social-icon {
-  margin-right: 5px;
-}
-
-a,
-a:visited,
-a:hover {
-  color: #fff;
+  margin-left: 5px;
+  margin-right: 0;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .gif-container {
@@ -234,8 +230,6 @@ footer span {
   line-height: 16px;
   font-style: italic;
 }
-
-footer 
 
 .opener {
   display: inline-block;

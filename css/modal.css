@@ -43,6 +43,7 @@
 
 .fineprint {
   line-height: 50%;
+  margin-bottom: 2vh;
 }
 
 .fineprint span {
@@ -63,6 +64,7 @@ ul {
   width: 100%;
   display: inline-block;
   text-align: center;
+  font-weight: 400;
 }
 
 .close {
