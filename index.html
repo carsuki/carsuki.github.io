@@ -25,8 +25,11 @@
   <meta name="twitter:card" content="summary_large_image">
 
   <!-- styles -->
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/mobile.css">
+  <link rel="preload" href="css/style.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="css/style.css"></noscript>
+
+  <link rel="preload" href="css/mobile.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="css/mobile.css"></noscript>
 
   <!-- less critical styles -->
   <link rel="stylesheet" href="css/modal.css">
