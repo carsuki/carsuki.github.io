@@ -18,7 +18,11 @@ body {
   font-family: CyberpunkWaifus;
 }
 
-.body-container {
+img {
+  width: 100%;
+}
+
+main {
   width: 90%;
   max-width: 500px;
   margin-top: 4vh;
@@ -29,7 +33,7 @@ body {
   border-radius: 10px;
 }
 
-.header-img {
+header figure {
   width: 70%;
   margin-top: 4vh;
   margin-bottom: 2vh;
@@ -53,10 +57,12 @@ body {
   animation-name: pulse;
 }
 
-.name-header {
+header h1 {
   font-family: Micro Sans;
   font-kerning: normal;
+  font-weight: normal;
   font-size: 34px;
+  height: 34px;
   margin-top: 0px;
   margin-left: auto;
   margin-right: auto;
@@ -64,27 +70,29 @@ body {
   margin-bottom: 0;
 }
 
-.main-body {
+header h2 {
   font-size: 20px;
+  font-weight: 400;
   text-align: center;
   margin-left: 20px;
   margin-right: 20px;
   margin-bottom: 1vh;
+  margin-top: 2vh;
   line-height: 1.2;
 }
 
-.socials {
+header div {
   margin-left: 20px;
   margin-right: 20px;
   text-align: center;
 }
 
-.social-link {
+header div a {
   font-size: 20px;
   text-decoration: none;
 }
 
-#social-icon {
+.social-icon {
   margin-right: 5px;
 }
 
@@ -94,19 +102,18 @@ a:hover {
   color: #fff;
 }
 
-.random-gif {
+.gif-container {
   margin-top: 4vh;
   margin-bottom: 4vh;
 }
 
-.random-gif img {
+.gif-container figure img {
   display: block;
   max-width: 100%;
   margin: 0;
 }
 
-.gif-container {
-  border: 2px solid #fff;
+.gif {
   display: block;
   margin: 0 auto;
   max-width: 80%;
@@ -115,8 +122,12 @@ a:hover {
   clear: both;
 }
 
+.gif img {
+  border: 2px solid #fff;
+}
+
 .splash,
-.player-container {
+.player {
   max-width: 80.8%;
   background-repeat: no-repeat;
   display: block;
@@ -124,9 +135,10 @@ a:hover {
   margin-right: auto;
 }
 
-.gif-label {
+.gif-container figcaption {
   text-align: center;
   margin-top: 8px;
+  line-height: 1.2;
 }
 
 .source-label {
@@ -136,44 +148,30 @@ a:hover {
 
 .splash {
   margin-top: 4vh;
-  margin-bottom: 4vh;
+  margin-bottom: 2vh;
 }
 
-.credits,
-.footer-info {
-  color: rgba(255, 255, 255, 0.6);
-  text-align: center;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 0px;
-  margin-bottom: 0px;
-}
-
-#credits-container {
+footer {
   display: inline-block;
   text-align: center;
   width: 100%;
-  margin-bottom: 1vh;
 }
 
-.credits {
+footer span {
   margin-bottom: 1vh;
   line-height: 1.2;
+  text-align: center;
+  opacity: 0.6;
   display: inline-block;
   margin-left: auto;
   margin-right: auto;
-}
-
-.credits a,
-#opener2 {
-  color: rgba(255, 255, 255, 0.6);
 }
 
 .footer-info {
   margin-bottom: 2vh;
 }
 
-.player-container {
+.player {
   height: 104px;
   display: flex;
 }
@@ -183,7 +181,7 @@ a:hover {
   flex: 1;
 }
 
-.player-info-container {
+.player-info {
   display: flex;
   justify-content: center;
   align-content: center;
@@ -196,7 +194,7 @@ a:hover {
   margin-top: 0px;
 }
 
-.player-cover {
+#cover {
   width: 100px;
   border: 2px solid #fff;
 }
@@ -237,6 +235,8 @@ a:hover {
   font-style: italic;
 }
 
-#opener2 {
+footer 
+
+.opener {
   display: inline-block;
 }

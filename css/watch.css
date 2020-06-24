@@ -1,35 +1,35 @@
 @media screen and (max-width: 320px) {
-  .body-container {
+  main {
     border: 0px solid #fff;
     margin: 0;
   }
 
-  .body-container,
-  .gif-container,
-  .header-img,
-  .player-container,
-  .splash {
+  main,
+  .gif,
+  header figure,
+  .player,
+  footer figure {
     min-width: 100%;
   }
 
-  .name-header {
+  header h1 {
     font-size: 40px;
     font-weight: bold;
   }
 
-  .main-body {
+  header h2 {
     font-size: 20px;
     margin-left: 0;
     margin-right: 0;
-    margin-bottom: 6vh;
-    margin-top: 3vh;
+    margin-bottom: 2vh;
+    margin-top: 4vh;
   }
 
-  .socials {
+  header div {
     display: none;
   }
 
-  .gif-label {
+  .gif figcaption {
     max-width: 100%;
     font-size: 20px;
   }
@@ -71,11 +71,11 @@
   }
   
   .artist-label {
-    padding-top: 2px;
+    padding-top: 4px;
     padding-bottom: 4px;
   }
 
-  #opener2 {
+  footer:nth-child(5) > span:nth-child(1) > a:nth-child(3) {
     height: 60px;
     line-height: 60px;
     border: 2px solid #fff;
@@ -86,6 +86,12 @@
     color: #fff;
   }
 
+  .splash {
+    min-width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
   .modal {
     -webkit-backdrop-filter: blur(2pt);
   }
@@ -94,13 +100,13 @@
     min-width: 75%;
   }
 
-  .modal-header {
+  modal h2 {
     font-size: 26px;
     font-weight: bold;
     margin-top: 5px;
   }
 
-  .modal-subheader {
+  modal h3 {
     font-size: 20px;
   }
 
@@ -112,11 +118,7 @@
     font-size: 18px;
   }
 
-  .modal-buttons {
-    display: none;
-  }
-
-  .modal-fineprint {
+  .fineprint {
     font-size: 14px;
     line-height: 100%;
   }
@@ -133,7 +135,7 @@
     margin-bottom: 5px;
   }
 
-  .credits {
+  footer span {
     font-size: 18px;
   }
 

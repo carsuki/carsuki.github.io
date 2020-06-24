@@ -1,36 +1,37 @@
 @media screen and (max-width: 768px) {
-  .body-container {
+  main {
     width: 95%;
     margin-top: 1vh;
     margin-bottom: 1vh;
   }
 
-  .header-img {
+  header figure {
     min-width: 80%;
   }
 
-  .name-header {
+  header h1 {
     font-size: 30px;
   }
 
-  .main-body {
+  header h2 {
     font-size: 16px;
+    margin-top: 1vh;
   }
 
-  .gif-label {
+  .gif figcaption {
     font-size: 12px;
   }
 
-  .player-container {
+  .player {
     height: 80px;
   }
 
   .cover-container,
-  .player-cover {
+  #cover {
     max-width: 75px;
   }
 
-  .player-info-container {
+  .player-info {
     margin-left: 15px;
     width: calc(100% - 95px);
   }
@@ -58,8 +59,7 @@
     padding-bottom: 2px;
   }
 
-  .credits,
-  #opener2 {
+  footer {
     font-size: 12px;
   }
 }

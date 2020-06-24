@@ -21,30 +21,31 @@
   min-width: 280px;
 }
 
-.modal-header {
+.modal h2 {
   font-family: Micro Sans;
   font-size: 20px;
+  text-align: center;
+  margin-bottom: 2vh;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 0;
+}
+
+.modal h3 {
+  font-size: 16px;
+  font-style: italic;
+  font-weight: normal;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 0;
   margin-bottom: 2vh;
 }
 
-.modal-subheader {
-  font-size: 16px;
-  font-style: italic;
-}
-
-.modal-buttons {
-  margin-bottom: 1vh;
-}
-
-.modal-button {
-  display: inline-block;
-}
-
-.fineprint-container {
+.fineprint {
   line-height: 50%;
 }
 
-.modal-fineprint {
+.fineprint span {
   font-size: 8px;
   line-height: 80%;
   font-style: italic;
@@ -57,7 +58,7 @@ ul {
   margin-top: 1vh;
 }
 
-.modal-header,
+.modal h2,
 .close {
   width: 100%;
   display: inline-block;

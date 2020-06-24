@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 
+<html lang="en">
+
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
 
   <title>carsuki</title>
   <link rel="icon" type="image/png" href="img/favicon.png">
@@ -27,9 +29,9 @@
   <link rel="stylesheet" href="css/mobile.css">
 
   <!-- less critical styles -->
-  <link rel="stylesheet" href="css/modal.css" defer>
-  <link rel="stylesheet" href="css/watch.css" defer>
-  <link rel="stylesheet" href="css/alert.css" defer>
+  <link rel="stylesheet" href="css/modal.css">
+  <link rel="stylesheet" href="css/watch.css">
+  <link rel="stylesheet" href="css/alert.css">
 
   <script src="https://kit.fontawesome.com/9ee8fa7e12.js" crossorigin="anonymous" defer></script>
 
@@ -43,65 +45,65 @@
 </head>
 
 <body>
-  <div class="body-container" id="body-container">
-    <img class="header-img" src="img/eyeball.png">
-    <p class="name-header">carsuki</p>
-    <p class="main-body">
-      "Developer interested in the web and iOS."<br>
-      —Man Who Does Not Exist
-    </p>
-    <div class="socials">
-      <a class="social-link" href="https://github.com/carsuki"><i class="fab fa-github" id="social-icon"></i></a>
-      <a class="social-link" href="https://youtube.com/c/carsuki"><i class="fab fa-youtube" id="social-icon"></i></a>
-    </div>
+  <main>
+    <header>
+      <figure>
+        <img src="img/eyeball.png" alt="carsuki eyeball">
+      </figure>
+      <h1>carsuki</h1>
+      <h2>
+        "Developer interested in the web and iOS."<br>
+        —Man Who Does Not Exist
+      </h2>
+      <div>
+        <a href="https://github.com/carsuki"><i class="fab fa-github"></i></a>
+        <a href="https://youtube.com/c/carsuki"><i class="fab fa-youtube"></i></a>
+      </div>
+    </header>
     <!-- alerts will appear here -->
-    <div class="random-gif">
-      <div class="gif-container" id="gif-container">
-        <img id="random">
-      </div>
-      <p class="gif-label"><i>Today's Selection</i><span id="label-span"> <i>(</i><a id="source-label" class="source-label" href="#"></a></span><i>)</i></p>
-    </div>
-    <div class="player-container">
+    <section class="gif-container">
+      <figure class="gif">
+          <img id="random" src="#" alt="Today's Selection">
+          <figcaption><i>Today's Selection</i><span id="label-span"> <i>(</i><a id="source-label" class="source-label" href="#"></a></span><i>)</i></figcaption>
+      </figure>
+    </section>
+    <section class="player">
       <div class="cover-container">
-        <img class="player-cover" id="cover" src="img/cover-generic.png">
+        <img class="player-cover" id="cover" src="img/cover-generic.png" alt="album cover">
       </div>
-      <div class="player-info-container">
+      <div class="player-info">
         <div class="player-label header-label">Now Playing</div>
         <div class="player-label title-label" id="title">Song Name</div>
         <div class="player-label artist-label" id="artist">Artist Name</div>
         <div class="player-label album-label" id="album">Album Name</div>
       </div>
-    </div>
-    <img class="splash" src="img/sukisplash.png">
-    <div id="credits-container">
-      <span class="credits">carsuki '20 - <a href="https://github.com/carsuki/carsuki.github.io/">page source</a> <span id="credits-divider">-&nbsp;</span></span><a id="opener2" class="opener" style="text-decoration:underline;cursor:pointer;">acknowledgements</a>
-    </div>
+    </section>
+    <figure class="splash">
+      <img src="img/sukisplash.png" alt="carsuki splash image">
+    </figure>
+    <footer>
+      <span>carsuki '20 - <a href="https://github.com/carsuki/carsuki.github.io/">page source</a> <span id="credits-divider">-&nbsp;</span><a class="opener" style="text-decoration:underline;cursor:pointer;">acknowledgements</a></span>
+    </footer>
 
-    <div id="acknowledgements-modal" class="modal">
+    <aside class="modal">
       <div class="modal-content">
-        <span class="modal-header">acknowledgements</span>
-        <br>
-        <span class="modal-subheader">javascript help from:</span>
-        <ul class="modal-body">
+        <h2>acknowledgements</h2>
+        <h3>javascript help from:</h3>
+        <ul>
           <li>The_Lucifer</li>
           <li>1Conan</li>
           <li>The Man</li>
         </ul>
-        <span class="modal-subheader">all GIF creators listed in <a href="https://carsuki.moe/js/randomgif.js">js/randomgif.js</a></span>
-        <br>
-        <br>
-        <span class="modal-subheader">CyberpunkWaifus font by <a href="https://github.com/tokamach/newtab/blob/master/fonts/CyberpunkWaifus.ttf">tokamach</a></span>
-        <br>
-        <br>
-        <span class="modal-subheader">'Now Playing' powered by <a href="https://last.fm">AudioScrobbler</a></span>
-        <br>
-        <br>
-        <div class="fineprint-container">
-          <span class="modal-fineprint">everything on this website written/created by myself (carsuki) is licensed under the NPL 2.0, with this additional exception: no individual named "pwn20wnd" or anything similar may use anything on this website (and the accompanying github repository) that i have created. a copy of the license is available at https://github.com/carsuki/npl-2.0/</span>
-        </div>
-        <br>
+        <h3>all GIF creators listed in <a href="https://carsuki.moe/js/randomgif.js">js/randomgif.js</a></h3>
+        <h3>CyberpunkWaifus font by <a href="https://github.com/tokamach/newtab/blob/master/fonts/CyberpunkWaifus.ttf">tokamach</a></h3>
+        <h3>'Now Playing' powered by <a href="https://last.fm">AudioScrobbler</a></h3>
+        <section class="fineprint">
+          <span>everything on this website written/created by myself (carsuki) is licensed under the NPL 2.0, with this additional exception: no individual named "pwn20wnd" or anything similar may use anything on this website (and the accompanying github repository) that i have created. a copy of the license is available at https://github.com/carsuki/npl-2.0/</span>
+        </section>
         <span class="close">close</span>
       </div>
-    </div>
-  </div>
+    </aside>
+  </main>
 </body>
+
+</html>
