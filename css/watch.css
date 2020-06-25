@@ -1,7 +1,4 @@
 @media screen and (max-width: 320px) {
-  * {
-    font-family: 'SF Pro Display', sans-serif !important;;
-  }
 
   main {
     border: 0px solid #fff;
