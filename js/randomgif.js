@@ -384,5 +384,10 @@ const randomgifs = [
       name: "Valenberg",
       gif: "img/gif/76.gif",
       link: "https://valenberg.tumblr.com"
+    },
+    { 
+      name: "yaspes",
+      gif: "img/gif/77.gif",
+      link: "https://yaspes.tumblr.com"
     }
 ]
