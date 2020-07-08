@@ -389,5 +389,15 @@ const randomgifs = [
       name: "yaspes",
       gif: "img/gif/77.gif",
       link: "https://yaspes.tumblr.com"
+    },
+    { 
+      name: "yaspes",
+      gif: "img/gif/77.gif",
+      link: "https://yaspes.tumblr.com"
+    },
+    { 
+      name: "Sorapoi",
+      gif: "img/gif/78.gif",
+      link: "https://www.pixiv.net/en/users/25185071"
     }
 ]
