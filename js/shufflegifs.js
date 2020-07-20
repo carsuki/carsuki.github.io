@@ -16,7 +16,7 @@ function shuffle(array) {
 
 shuffle(randomgifs);
 
-for (let step = 1; step < 79; step++) {
+for (let step = 1; step < gifCount; step++) {
   var contain = document.getElementById("container")
   var containLink = document.createElement("a");
   contain.appendChild(containLink);

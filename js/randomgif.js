@@ -399,5 +399,13 @@ const randomgifs = [
       name: "Sorapoi",
       gif: "img/gif/78.gif",
       link: "https://www.pixiv.net/en/users/25185071"
+    },
+    { 
+      name: "Unknown",
+      gif: "img/gif/79.gif",
+      link: ""
     }
 ]
+
+// count number of gifs
+var gifCount = (randomgifs, Object.keys(randomgifs).length);
