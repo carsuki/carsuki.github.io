@@ -404,6 +404,21 @@ const randomgifs = [
       name: "Unknown",
       gif: "img/gif/79.gif",
       link: ""
+    },
+    { 
+      name: "arkhai2",
+      gif: "img/gif/80.gif",
+      link: "https://reddit.com/u/arkhai2"
+    },
+    { 
+      name: "zealotlee",
+      gif: "img/gif/81.gif",
+      link: "https://reddit.com/u/zealotlee"
+    },
+    { 
+      name: "Patlabor: The Movie",
+      gif: "img/gif/82.gif",
+      link: "https://myanimelist.net/anime/1095/Kidou_Keisatsu_Patlabor_the_Movie"
     }
 ]
 
