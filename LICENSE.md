@@ -9,7 +9,7 @@ Public License Version 2.0.
 
 Additional Terms applicable to the Netscape Public License.
 
-I. ''Netscape'' exclusively refers to Netscape Communications Corporation.
+I. ''Netscape'' exclusively refers to the original incarnation of Netscape Communications Corporation, which disbanded on July 15, 2003.
 
 II. Effect. These additional terms described in this Netscape Public
 License -- Amendments shall apply to the Mozilla Communicator
