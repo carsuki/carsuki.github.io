@@ -1,121 +1,196 @@
 <!DOCTYPE html>
 
-<html lang="en" style="background:#000">
+<html lang="en" style="background: #000">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=5"
+    />
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
+    <title>carsuki</title>
+    <link rel="icon" type="image/png" href="img/favicon.png" />
+    <link rel="canonical" href="https://carsuki.moe" />
 
-  <title>carsuki</title>
-  <link rel="icon" type="image/png" href="img/favicon.png">
-  <link rel="canonical" href="https://carsuki.moe">
+    <meta name="author" content="carsuki" />
+    <meta
+      name="description"
+      content="“Developer interested in the web and iOS.” —Man Who Does Not Exist"
+    />
 
-  <meta name="author" content="carsuki">
-  <meta name="description" content="“Developer interested in the web and iOS.” —Man Who Does Not Exist">
+    <!-- opengraph -->
+    <meta
+      property="og:image"
+      content="https://carsuki.moe/img/eyeball-large.png"
+    />
+    <meta
+      property="og:description"
+      content="“Developer interested in the web and iOS.” —Man Who Does Not Exist"
+    />
+    <meta property="og:title" content="carsuki" />
+    <meta property="og:url" content="https://carsuki.moe" />
 
-  <!-- opengraph -->
-  <meta property="og:image" content="https://carsuki.moe/img/eyeball-large.png">
-  <meta property="og:description" content="“Developer interested in the web and iOS.” —Man Who Does Not Exist">
-  <meta property="og:title" content="carsuki">
-  <meta property="og:url" content="https://carsuki.moe">
+    <!-- twitter cards -->
+    <meta name="twitter:title" content="carsuki" />
+    <meta
+      name="twitter:description"
+      content="“Developer interested in the web and iOS.” —Man Who Does Not Exist"
+    />
+    <meta
+      name="twitter:image"
+      content="https://carsuki.moe/img/eyeball-large.png"
+    />
+    <meta name="twitter:card" content="summary_large_image" />
 
-  <!-- twitter cards -->
-  <meta name="twitter:title" content="carsuki">
-  <meta name="twitter:description" content="“Developer interested in the web and iOS.” —Man Who Does Not Exist">
-  <meta name="twitter:image" content="https://carsuki.moe/img/eyeball-large.png">
-  <meta name="twitter:card" content="summary_large_image">
+    <!-- loadcss -->
+    <script src="js/loadcss.js"></script>
 
-  <!-- loadcss -->
-  <script src="js/loadcss.js"></script>
+    <!-- styles -->
+    <link
+      rel="stylesheet"
+      href="css/style.css"
+      media="print"
+      onload="this.media='all'; this.onload=null;"
+    />
+    <link
+      rel="stylesheet"
+      href="css/mobile.css"
+      media="print"
+      onload="this.media='all'; this.onload=null;"
+    />
 
-  <!-- styles -->
-  <link rel="stylesheet" href="css/style.css" media="print" onload="this.media='all'; this.onload=null;">
-  <link rel="stylesheet" href="css/mobile.css" media="print" onload="this.media='all'; this.onload=null;">
+    <!-- less critical styles -->
+    <link rel="stylesheet" href="css/modal.css" />
+    <link rel="stylesheet" href="css/watch.css" />
+    <link rel="stylesheet" href="css/alert.css" />
 
-  <!-- less critical styles -->
-  <link rel="stylesheet" href="css/modal.css">
-  <link rel="stylesheet" href="css/watch.css">
-  <link rel="stylesheet" href="css/alert.css">
+    <!-- javascript -->
+    <script src="js/randomgif.js"></script>
+    <script src="js/assigngif.js" defer></script>
 
-  <!-- javascript -->
-  <script src="js/randomgif.js"></script>
-  <script src="js/assigngif.js" defer></script>
+    <script src="js/musicplayer.js"></script>
+    <script src="js/modal.js" defer></script>
+    <script src="js/eyeballtools.js" defer></script>
+  </head>
 
-  <script src="js/musicplayer.js"></script>
-  <script src="js/modal.js" defer></script>
-  <script src="js/eyeballtools.js" defer></script>
-
-</head>
-
-<body>
-  <main>
-    <header>
-      <figure class="header-img">
-        <img src="img/eyeball.png" alt="carsuki eyeball">
+  <body>
+    <main>
+      <header>
+        <figure class="header-img">
+          <img src="img/eyeball.png" alt="carsuki eyeball" />
+        </figure>
+        <h1>carsuki</h1>
+        <h2>
+          "Developer interested in the web and iOS."<br />
+          —Man Who Does Not Exist
+        </h2>
+        <div>
+          <a href="https://github.com/carsuki">
+            <figure class="social-icon">
+              <img src="img/icons/github.png" alt="github" />
+            </figure>
+          </a>
+          <a href="https://youtube.com/c/carsuki">
+            <figure class="social-icon">
+              <img src="img/icons/youtube.png" alt="youtube" />
+            </figure>
+          </a>
+        </div>
+      </header>
+      <!-- alerts will appear here -->
+      <section class="gif-container">
+        <figure class="gif">
+          <img id="random" src="#" alt="Today's Selection" />
+          <figcaption>
+            <i>Today's Selection</i
+            ><span id="label-span">
+              <i>(</i
+              ><a id="source-label" class="source-label" href="#"></a></span
+            ><i>)</i>
+          </figcaption>
+        </figure>
+      </section>
+      <section class="player">
+        <div class="cover-container">
+          <img
+            class="player-cover"
+            id="cover"
+            src="img/cover-generic.png"
+            alt="album cover"
+          />
+        </div>
+        <div class="player-info">
+          <div class="player-label header-label">Now Playing</div>
+          <div class="player-label title-label" id="title">Song Name</div>
+          <div class="player-label artist-label" id="artist">Artist Name</div>
+          <div class="player-label album-label" id="album">Album Name</div>
+        </div>
+      </section>
+      <figure class="splash">
+        <img src="img/sukisplash.png" alt="carsuki splash image" />
       </figure>
-      <h1>carsuki</h1>
-      <h2>
-        "Developer interested in the web and iOS."<br>
-        —Man Who Does Not Exist
-      </h2>
-      <div>
-        <a href="https://github.com/carsuki">
-          <figure class="social-icon">
-            <img src="img/icons/github.png" alt="github">
-          </figure>
-        </a>
-        <a href="https://youtube.com/c/carsuki">
-          <figure class="social-icon">
-            <img src="img/icons/youtube.png" alt="youtube">
-          </figure>
-        </a>
-      </div>
-    </header>
-    <!-- alerts will appear here -->
-    <section class="gif-container">
-      <figure class="gif">
-          <img id="random" src="#" alt="Today's Selection">
-          <figcaption><i>Today's Selection</i><span id="label-span"> <i>(</i><a id="source-label" class="source-label" href="#"></a></span><i>)</i></figcaption>
-      </figure>
-    </section>
-    <section class="player">
-      <div class="cover-container">
-        <img class="player-cover" id="cover" src="img/cover-generic.png" alt="album cover">
-      </div>
-      <div class="player-info">
-        <div class="player-label header-label">Now Playing</div>
-        <div class="player-label title-label" id="title">Song Name</div>
-        <div class="player-label artist-label" id="artist">Artist Name</div>
-        <div class="player-label album-label" id="album">Album Name</div>
-      </div>
-    </section>
-    <figure class="splash">
-      <img src="img/sukisplash.png" alt="carsuki splash image">
-    </figure>
-    <footer>
-      <span>carsuki '20 - <a href="https://github.com/carsuki/carsuki.github.io/">page source</a> <span id="credits-divider">-&nbsp;</span><a class="opener" style="text-decoration:underline;cursor:pointer;">acknowledgements</a></span>
-    </footer>
+      <footer>
+        <span
+          >carsuki '20 -
+          <a href="https://github.com/carsuki/carsuki.github.io/"
+            >page source</a
+          >
+          <span id="credits-divider">-&nbsp;</span
+          ><a class="opener" style="text-decoration: underline; cursor: pointer"
+            >acknowledgements</a
+          ></span
+        >
+      </footer>
 
-    <aside class="modal">
-      <div class="modal-content">
-        <h2>acknowledgements</h2>
-        <h3>javascript help from:</h3>
-        <ul>
-          <li>The_Lucifer</li>
-          <li>1Conan</li>
-          <li>The Man</li>
-        </ul>
-        <h3>SEO help from MegaDev</h3>
-        <h3>all GIF creators listed in <a href="https://carsuki.moe/js/randomgif.js">js/randomgif.js</a></h3>
-        <h3>CyberpunkWaifus font by <a href="https://github.com/tokamach/newtab/blob/master/fonts/CyberpunkWaifus.ttf">tokamach</a></h3>
-        <h3>'Now Playing' powered by <a href="https://last.fm">AudioScrobbler</a></h3>
-        <section class="fineprint">
-          <span>everything on this website written/created by myself (carsuki) is licensed under the NPL 2.0, with this additional exception: no individual named "pwn20wnd" or anything similar may use anything on this website (and the accompanying github repository) that i have created. a copy of the license is available at https://github.com/carsuki/npl-2.0/</span>
-        </section>
-        <span class="close">close</span>
-      </div>
-    </aside>
-  </main>
-</body>
-
+      <aside class="modal">
+        <div class="modal-content">
+          <h2>acknowledgements</h2>
+          <h3>javascript help from:</h3>
+          <ul>
+            <li>The_Lucifer</li>
+            <li>1Conan</li>
+            <li>The Man</li>
+          </ul>
+          <h3>SEO help from MegaDev</h3>
+          <h3>
+            all GIF creators listed in
+            <a href="https://carsuki.moe/js/randomgif.js">js/randomgif.js</a>
+          </h3>
+          <h3>
+            CyberpunkWaifus font by
+            <a
+              href="https://github.com/tokamach/newtab/blob/master/fonts/CyberpunkWaifus.ttf"
+              >tokamach</a
+            >
+          </h3>
+          <h3>
+            'Now Playing' powered by
+            <a href="https://last.fm">AudioScrobbler</a>
+          </h3>
+          <section class="logos">
+            <figure class="geobutton">
+              <img src="img/buttons/chillpill.gif" alt="take a chill pill" />
+            </figure>
+            <figure class="geobutton">
+              <img src="img/buttons/16bit.gif" alt="BEST VIEWED 1024x768 16Bit Colour" />
+            </figure>
+            <figure class="geobutton">
+              <img src="img/buttons/carsukinow.gif" alt="carsuki Now!" />
+            </figure>
+          </section>
+          <section class="fineprint">
+            <span
+              >everything on this website written/created by myself (carsuki) is
+              licensed under the NPL 2.0, with this additional exception: no
+              individual named "pwn20wnd" or anything similar may use anything
+              on this website (and the accompanying github repository) that i
+              have created. a copy of the license is available at
+              https://github.com/carsuki/npl-2.0/</span
+            >
+          </section>
+          <span class="close">close</span>
+        </div>
+      </aside>
+    </main>
+  </body>
 </html>

@@ -13,7 +13,7 @@
 .modal-content {
   background-color: #000;
   border: 4px solid #fff;
-  margin: 18vh auto;
+  margin: 16vh auto;
   padding: 20px;
   padding-top: 2vh;
   padding-bottom: 2vh;
@@ -41,9 +41,22 @@
   margin-bottom: 2vh;
 }
 
+.logos {
+  display: flex;
+  align-items: center;
+}
+
+.geobutton {
+  width: 88px;
+  height: 31px;
+  margin: 0;
+  margin-right: 6px;
+}
+
 .fineprint {
   line-height: 50%;
   margin-bottom: 2vh;
+  margin-top: 2vh;
 }
 
 .fineprint span {

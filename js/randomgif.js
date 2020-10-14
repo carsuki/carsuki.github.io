@@ -419,6 +419,11 @@ const randomgifs = [
       name: "Patlabor: The Movie",
       gif: "img/gif/82.gif",
       link: "https://myanimelist.net/anime/1095/Kidou_Keisatsu_Patlabor_the_Movie"
+    },
+    { 
+      name: "Sonic the Hedgehog: The Movie",
+      gif: "img/gif/83.gif",
+      link: "https://myanimelist.net/anime/2263/Sonic%E2%98%85the%E2%98%85Hedgehog"
     }
 ]
 
