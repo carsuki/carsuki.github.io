@@ -449,6 +449,11 @@ const randomgifs = [
       name: "BenAdrift",
       gif: "img/gif/88.gif",
       link: "https://benadrift.tumblr.com/post/188618748668/rainy-arcade"
+    },
+    { 
+      name: "Cowboy Bebop",
+      gif: "img/gif/89.gif",
+      link: "https://myanimelist.net/anime/1/Cowboy_Bebop"
     }
 ]
 
