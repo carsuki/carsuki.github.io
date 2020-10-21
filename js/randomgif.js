@@ -424,6 +424,11 @@ const randomgifs = [
       name: "Sonic the Hedgehog: The Movie",
       gif: "img/gif/83.gif",
       link: "https://myanimelist.net/anime/2263/Sonic%E2%98%85the%E2%98%85Hedgehog"
+    },
+    { 
+      name: "Unknown",
+      gif: "img/gif/84.gif",
+      link: ""
     }
 ]
 
