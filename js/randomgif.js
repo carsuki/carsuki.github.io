@@ -439,6 +439,11 @@ const randomgifs = [
       name: "7onsa",
       gif: "img/gif/86.gif",
       link: "https://7onsa.tumblr.com/post/622259490462613504/%E5%B9%B4%E4%B8%AD%E7%84%A1%E4%BC%91"
+    },
+    { 
+      name: "mienar",
+      gif: "img/gif/87.gif",
+      link: "https://mienar.tumblr.com"
     }
 ]
 
