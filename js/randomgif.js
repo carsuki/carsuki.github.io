@@ -454,6 +454,16 @@ const randomgifs = [
       name: "Cowboy Bebop",
       gif: "img/gif/89.gif",
       link: "https://myanimelist.net/anime/1/Cowboy_Bebop"
+    },
+    { 
+      name: "Akira",
+      gif: "img/gif/90.gif",
+      link: "https://myanimelist.net/anime/47/Akira"
+    },
+    { 
+      name: "flooko",
+      gif: "img/gif/91.gif",
+      link: "https://www.instagram.com/flooko/"
     }
 ]
 
