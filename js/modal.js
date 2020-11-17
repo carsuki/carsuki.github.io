@@ -3,7 +3,7 @@ var btn = document.getElementsByClassName("opener");
 var close = document.getElementsByClassName("close");
 
   btn[0].onclick = function() {
-    modal[0].style.display = "block";
+    modal[0].style.display = "flex";
     modal[0].style.position = "fixed";
   }
 

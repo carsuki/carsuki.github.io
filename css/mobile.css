@@ -58,8 +58,12 @@
     padding-top: 2px;
     padding-bottom: 2px;
   }
+  
+  .drink-maker {
+    display: none;
+  }
 
   footer {
-    font-size: 12px;
+    margin-top: 0px;
   }
 }
