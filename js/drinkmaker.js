@@ -1,12 +1,3 @@
-// sleep function
-function sleep(milliseconds) {
-	const date = Date.now();
-	let currentDate = null;
-	do {
-		currentDate = Date.now();
-	} while (currentDate - date < milliseconds);
-}
-
 // button variables
 var resetButton = document.querySelector('.reset');
 var resetButtonText = document.querySelector('.reset-button p');
