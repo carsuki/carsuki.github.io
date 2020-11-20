@@ -167,13 +167,14 @@ header div a {
 }
 
 .gif-container figcaption {
+  font-family: CALICOMP;
+  font-size: 12px;
   text-align: center;
   margin-top: 8px;
   line-height: 1.2;
 }
 
 .source-label {
-  font-style: italic;
   text-decoration: underline;
 }
 
@@ -190,7 +191,9 @@ footer {
 }
 
 footer span {
-  margin-bottom: 9px;
+  font-family: CALICOMP;
+  font-size: 12px;
+  margin-bottom: 12px;
   line-height: 1.2;
   text-align: center;
   opacity: 0.6;
@@ -239,11 +242,12 @@ footer span {
 }
 
 .header-label {
-  font-size: 16px;
+  font-family: CALICOMP;
+  font-size: 13px;
   height: 16px;
   line-height: 16px;
   opacity: 0.6;
-  padding-bottom: 6px;
+  padding-bottom: 8px;
 }
 
 .title-label {
@@ -257,14 +261,14 @@ footer span {
   height: 20px;
   line-height: 20px;
   padding-top: 4px;
-  padding-bottom: 4px;
+  padding-bottom: 6px;
 }
 
 .album-label {
-  font-size: 16px;
+  font-family: CALICOMP;
+  font-size: 13px;
   height: 16px;
   line-height: 16px;
-  font-style: italic;
 }
 
 .opener {
