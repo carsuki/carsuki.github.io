@@ -464,7 +464,28 @@ const randomgifs = [
       name: "flooko",
       gif: "img/gif/91.gif",
       link: "https://www.instagram.com/flooko/"
+    },
+    { 
+      name: "Unknown",
+      gif: "img/gif/92.gif",
+      link: ""
+    },
+    { 
+      name: "Blade Runner",
+      gif: "img/gif/93.gif",
+      link: "https://www.imdb.com/title/tt0083658/"
+    },
+    { 
+      name: "Unknown",
+      gif: "img/gif/94.gif",
+      link: ""
+    },
+    { 
+      name: "Unknown",
+      gif: "img/gif/95.gif",
+      link: ""
     }
+    
 ]
 
 // count number of gifs
