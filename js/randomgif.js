@@ -484,6 +484,11 @@ const randomgifs = [
       name: "Unknown",
       gif: "img/gif/95.gif",
       link: ""
+    },
+    { 
+      name: "Unknown",
+      gif: "img/gif/96.gif",
+      link: ""
     }
     
 ]
