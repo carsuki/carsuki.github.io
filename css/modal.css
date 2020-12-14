@@ -62,7 +62,7 @@
 }
 
 .fineprint span {
-  font-family: CALICOMP;
+  font-family: 'CALICOMP2';
   font-size: 8px;
   line-height: 80%;
   opacity: 0.6;
@@ -85,7 +85,7 @@ ul {
 }
 
 .close {
-  font-family: CALICOMP;
+  font-family: 'CALICOMP2';
   font-size: 13px;
   text-decoration: underline;
   cursor: pointer;

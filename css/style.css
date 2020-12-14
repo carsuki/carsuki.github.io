@@ -18,6 +18,12 @@
 }
 
 @font-face {
+  font-family: 'CALICOMP2';
+  src: url("../font/calicomp2.ttf");
+  font-display: swap;
+}
+
+@font-face {
   font-family: RecipeBook;
   src: url("../font/recipebook.ttf");
   font-display: swap;
@@ -167,7 +173,7 @@ header div a {
 }
 
 .gif-container figcaption {
-  font-family: CALICOMP;
+  font-family: 'CALICOMP2';
   font-size: 13px;
   text-align: center;
   margin-top: 8px;
@@ -191,7 +197,7 @@ footer {
 }
 
 footer span {
-  font-family: CALICOMP;
+  font-family: 'CALICOMP2';
   font-size: 12px;
   margin-bottom: 12px;
   line-height: 1.2;
@@ -242,7 +248,7 @@ footer span {
 }
 
 .header-label {
-  font-family: CALICOMP;
+  font-family: 'CALICOMP2';
   font-size: 13px;
   height: 16px;
   line-height: 16px;
@@ -265,7 +271,7 @@ footer span {
 }
 
 .album-label {
-  font-family: CALICOMP;
+  font-family: 'CALICOMP2';
   font-size: 13px;
   height: 16px;
   line-height: 16px;
