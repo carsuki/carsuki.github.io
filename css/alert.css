@@ -21,7 +21,7 @@
 
 .alert-subheader {
   opacity: 0.60;
-  margin-bottom: 1vh;
+  width: 100%;
   display: inline-block;
 }
 
