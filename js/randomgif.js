@@ -347,9 +347,9 @@ const randomgifs = [
     link: "https://myanimelist.net/anime/7711/Karigurashi_no_Arrietty",
   },
   {
-    name: "Unknown",
+    name: "snatti",
     gif: "img/gif/69.gif",
-    link: "",
+    link: "https://www.deviantart.com/snatti89/",
   },
   {
     name: "einsbern",
