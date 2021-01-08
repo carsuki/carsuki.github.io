@@ -509,6 +509,141 @@ const randomgifs = [
     gif: "img/gif/99.gif",
     link: "",
   },
+  {
+    name: "Unknown",
+    gif: "img/gif/99.gif",
+    link: "",
+  },
+  {
+    name: "Unknown",
+    gif: "img/gif/100.gif",
+    link: "",
+  },
+  {
+    name: "Unknown",
+    gif: "img/gif/101.gif",
+    link: "",
+  },
+  {
+    name: "Unknown",
+    gif: "img/gif/102.gif",
+    link: "",
+  },
+  {
+    name: "Unknown",
+    gif: "img/gif/103.gif",
+    link: "",
+  },
+  {
+    name: "Unknown",
+    gif: "img/gif/104.gif",
+    link: "",
+  },
+  {
+    name: "Unknown",
+    gif: "img/gif/105.gif",
+    link: "",
+  },
+  {
+    name: "Unknown",
+    gif: "img/gif/106.gif",
+    link: "",
+  },
+  {
+    name: "Unknown",
+    gif: "img/gif/107.gif",
+    link: "",
+  },
+  {
+    name: "Unknown",
+    gif: "img/gif/108.gif",
+    link: "",
+  },
+  {
+    name: "Unknown",
+    gif: "img/gif/109.gif",
+    link: "",
+  },
+  {
+    name: "Unknown",
+    gif: "img/gif/110.gif",
+    link: "",
+  },
+  {
+    name: "Unknown",
+    gif: "img/gif/111.gif",
+    link: "",
+  },
+  {
+    name: "Unknown",
+    gif: "img/gif/112.gif",
+    link: "",
+  },
+  {
+    name: "Unknown",
+    gif: "img/gif/113.gif",
+    link: "",
+  },
+  {
+    name: "A-Girl",
+    gif: "img/gif/114.gif",
+    link: "https://myanimelist.net/anime/5447/A-Girl",
+  },
+  {
+    name: "Nineteen 19",
+    gif: "img/gif/115.gif",
+    link: "https://myanimelist.net/anime/2468/Nineteen_19",
+  },
+  {
+    name: "Download: Devil's Circuit",
+    gif: "img/gif/116.gif",
+    link: "https://myanimelist.net/anime/3152/Down_Load__Namu_Amida_Butsu_wa_Ai_no_Uta",
+  },
+  {
+    name: "The Kabocha Wine",
+    gif: "img/gif/117.gif",
+    link: "https://myanimelist.net/anime/3159/The_Kabocha_Wine",
+  },
+  {
+    name: "Download: Devil's Circuit",
+    gif: "img/gif/118.gif",
+    link: "https://myanimelist.net/anime/3152/Down_Load__Namu_Amida_Butsu_wa_Ai_no_Uta",
+  },
+  {
+    name: "Be-Boy Kidnapp'n Idol",
+    gif: "img/gif/119.gif",
+    link: "https://myanimelist.net/anime/2220/Be-Boy_Kidnappn_Idol",
+  },
+  {
+    name: "The Irresponsible Captain Tylor",
+    gif: "img/gif/120.gif",
+    link: "https://myanimelist.net/anime/569/Musekinin_Kanchou_Tylor",
+  },
+  {
+    name: "The Irresponsible Captain Tylor",
+    gif: "img/gif/121.gif",
+    link: "https://myanimelist.net/anime/569/Musekinin_Kanchou_Tylor",
+  },
+  {
+    name: "Purple Eyes in the Dark",
+    gif: "img/gif/122.gif",
+    link: "https://myanimelist.net/anime/9509/Yami_no_Purple_Eye",
+  },
+  {
+    name: "Shounan Bakosouzoku",
+    gif: "img/gif/123.gif",
+    link: "https://myanimelist.net/anime/2463/Shounan_Bakusouzoku",
+  },
+  {
+    name: "Shounan Bakosouzoku",
+    gif: "img/gif/124.gif",
+    link: "https://myanimelist.net/anime/2463/Shounan_Bakusouzoku",
+  },
+  {
+    name: "Tokimeki Tonight",
+    gif: "img/gif/125.gif",
+    link: "https://myanimelist.net/anime/3125/Tokimeki_Tonight",
+  }
 ];
 
 // count number of gifs
