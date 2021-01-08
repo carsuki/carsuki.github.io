@@ -79,18 +79,6 @@ getJSON('https://api.carsuki.moe/aotw.json',  function(err, jsonData) {
        };
        new Dotdotdot( wrapper, options );
     });
-    
-    // update meta tags for dynamic rich embed
-    var currentAlbum = "This week's album: " + data["artists"][0]["name"] + " - " + data["name"];
-    console.log(currentAlbum);
-    
-    $('meta[property=og\\:image]').attr('content', data["images"][1]["url"]);
-    $('meta[property=og\\:description]').attr('content', currentAlbum);
-    
-    $('meta[property=twitter\\:image]').attr('content', data["images"][1]["url"]);
-    $('meta[property=twitter\\:description]').attr('content', currentAlbum);
-    
-    $('meta[property=description]').attr('content', currentAlbum);
   });
 
   // remove old data if album count is above 20
