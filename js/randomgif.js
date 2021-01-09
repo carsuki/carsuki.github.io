@@ -648,6 +648,11 @@ const randomgifs = [
     name: "r-i-v-e-r",
     gif: "img/gif/126.gif",
     link: "https://r-i-v-e-r.tumblr.com/post/167529417812/i-want-you-to-love-winter-as-i-do-because-between",
+  },
+  {
+    name: "Mark Ferrari",
+    gif: "img/gif/127.gif",
+    link: "https://markferrari.com",
   }
 ];
 
