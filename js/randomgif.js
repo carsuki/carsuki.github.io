@@ -643,6 +643,11 @@ const randomgifs = [
     name: "Tokimeki Tonight",
     gif: "img/gif/125.gif",
     link: "https://myanimelist.net/anime/3125/Tokimeki_Tonight",
+  },
+  {
+    name: "r-i-v-e-r",
+    gif: "img/gif/126.gif",
+    link: "https://r-i-v-e-r.tumblr.com/post/167529417812/i-want-you-to-love-winter-as-i-do-because-between",
   }
 ];
 
