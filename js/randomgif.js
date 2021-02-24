@@ -653,6 +653,21 @@ const randomgifs = [
     name: "Mark Ferrari",
     gif: "img/gif/127.gif",
     link: "https://markferrari.com",
+  },
+  {
+    name: "Unknown",
+    gif: "img/gif/128.gif",
+    link: "",
+  },
+  {
+    name: "Unknown",
+    gif: "img/gif/129.gif",
+    link: "",
+  },
+  {
+    name: "InuYasha",
+    gif: "img/gif/130.gif",
+    link: "https://myanimelist.net/anime/249/InuYasha",
   }
 ];
 
