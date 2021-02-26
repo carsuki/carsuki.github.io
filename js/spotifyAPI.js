@@ -1,3 +1,7 @@
+// spotifyAPI.js
+// spotify API functions for album of the week
+// carsuki '20
+
 // get aotw information
 getJSON = function(url, callback) {
   var xhr = new XMLHttpRequest();

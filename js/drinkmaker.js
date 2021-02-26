@@ -1,3 +1,7 @@
+// drinkmaker.js
+// va11 hall-a drink maker clone
+// carsuki '20
+
 // button variables
 var resetButton = document.querySelector('.reset');
 var resetButtonText = document.querySelector('.reset-button p');
