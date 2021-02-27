@@ -3,7 +3,7 @@
 // carsuki '21
 
 // list all splash images
-var randomsplash = ["img/splash/original.png", "img/splash/patagonia.png"];
+var randomsplash = ["img/splash/original.png", "img/splash/patagonia.png", "img/splash/y2k.png"];
 
 function shuffle(array) {
   var currentIndex = array.length, temporaryValue, randomIndex;
