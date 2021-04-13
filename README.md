@@ -6,8 +6,8 @@
 
 ___
 
-<p align="center" style="opacity: 0.60"><i>everything on this repository written/created by myself (carsuki) is licensed under the NPL 2.0. other content⁠—including GIFs, images (excluding: cover-generic.png, sukisplash.png), cyberpunkwaifus font⁠—are owned by their creator(s), and i claim no ownership of them.
+<p align="center" style="opacity: 0.60"><i>everything on this repository written/created by myself (carsuki) is licensed under the NPL 2.0. other content⁠—including GIFs, images (excluding: cover-generic.png, sukisplash.png), cyberpunkwaifus font⁠—are owned by their creator(s), and I claim no ownership of them.
   <br>
   <br>
-  additionally, this exception applies: no individual named "pwn20wnd" or anything similar may use anything on this repository that i have created.
+  additionally, this exception applies: no individual named "pwn20wnd" or anything similar may use anything on this repository that I have created.
 </i></p>
