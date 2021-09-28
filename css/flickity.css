@@ -1,0 +1,80 @@
+.carousel-cell {
+  width: 15vw;
+	height: 200px;
+	box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  overflow: hidden;
+}
+
+/* cell number */
+.carousel-cell:before {
+  display: block;
+  text-align: center;
+  content: counter(gallery-cell);
+  line-height: 200px;
+  font-size: 80px;
+  color: white;
+}
+
+/* smaller, dark, rounded square */
+.flickity-button {
+  background: #333;
+}
+.flickity-button:hover {
+  background: #F90;
+}
+
+.flickity-prev-next-button {
+  width: 30px;
+  height: 30px;
+  border-radius: 5px;
+}
+/* icon color */
+.flickity-button-icon {
+  fill: white;
+}
+/* position outside */
+.flickity-prev-next-button.previous {
+  left: -34px;
+}
+.flickity-prev-next-button.next {
+  right: -34px;
+}
+
+/* position dots up a bit */
+.flickity-page-dots {
+  bottom: -22px;
+}
+/* dots are lines */
+.flickity-page-dots .dot {
+  height: 4px;
+  width: 40px;
+  margin: 0;
+  border-radius: 0;
+}
+
+.carousel-header {
+  position: absolute;
+  bottom: 10px;
+  left: 12px;
+  right: 12px;
+  font-weight: 500;
+  font-size: 16px;
+  text-align: center;
+}
+
+.carousel-img {
+  position: absolute;
+  width: 80%;
+  height: 70%;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  margin-top: 16px;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+

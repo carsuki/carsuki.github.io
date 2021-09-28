@@ -197,11 +197,12 @@ function finishDrink() {
 var totalSeconds = 0;
 function setTime() {
 	++totalSeconds;
-	if (totalSeconds < 5) {
+	if (totalSeconds < 4) {
 		blend = false;
 	}
-	if (totalSeconds > 4) {
-		shakerSprite.style.animationDuration = '0.4s';
+	if (totalSeconds > 3) {
+		shakerSprite.style.animation = 'none';
+		shakerSprite.style.animation = 'shake 0.2s infinite';
 		shakerSprite.style.animationIterationCount = 'infinite';
 		blend = true;
 	}
