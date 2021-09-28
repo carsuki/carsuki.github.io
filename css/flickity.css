@@ -1,20 +1,10 @@
 .carousel-cell {
-  width: 15vw;
+  width: 40%;
 	height: 200px;
 	box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   margin-bottom: 10px;
   margin-top: 10px;
   overflow: hidden;
-}
-
-/* cell number */
-.carousel-cell:before {
-  display: block;
-  text-align: center;
-  content: counter(gallery-cell);
-  line-height: 200px;
-  font-size: 80px;
-  color: white;
 }
 
 /* smaller, dark, rounded square */
@@ -80,4 +70,11 @@
 
 .flickity-prev-next-button.next {
   z-index: 1;
+}
+
+// mobile sizing
+@media only screen and (max-width: 768px) {
+  .carousel-cell {
+    width: 40%;
+  }
 }
