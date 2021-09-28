@@ -78,3 +78,6 @@
   background-repeat: no-repeat;
 }
 
+.flickity-prev-next-button.next {
+  z-index: 1;
+}
