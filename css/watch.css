@@ -1,0 +1,179 @@
+@media screen and (max-width: 320px) {
+
+  main {
+    border: 0px solid #fff;
+    margin: 0;
+  }
+
+  main,
+  .gif,
+  header figure,
+  .player,
+  footer figure {
+    min-width: 100%;
+  }
+
+  header h1 {
+    font-size: 36pt;
+    height: 36pt;
+    font-weight: bold;
+  }
+
+  header h2 {
+    font-size: 16pt;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 2vh;
+    margin-top: 2vh;
+  }
+
+  header div {
+    display: none;
+  }
+
+  .gif-container {
+    margin-bottom: 8vh;
+  }
+
+  .gif {
+    margin-top: 8vh;
+  }
+
+  .gif figcaption {
+    max-width: 100%;
+    font-size: 15pt;
+  }
+
+  .player {
+    height: 100px;
+  }
+
+  .player-container {
+    height: 105px;
+  }
+
+  .cover-container {
+    max-width: 100px;
+  }
+
+  .player-cover,
+  #cover {
+    max-width: 96px;
+  }
+
+  .player-info {
+    margin-left: 10px;
+    width: calc(100% - 105px);
+  }
+
+  .header-label,
+  .album-label {
+    font-size: 16pt;
+    height: 16pt;
+    line-height: 16pt;
+  }
+
+  .title-label {
+    font-weight: 600;
+  }
+  
+  .title-label,
+  .artist-label {
+    font-size: 19pt;
+    height: 19pt;
+    line-height: 19pt;
+  }
+  
+  .artist-label {
+    padding-top: 4px;
+    padding-bottom: 4px;
+  }
+
+  footer:nth-child(5) > span:nth-child(1) > a:nth-child(3) {
+    height: 60px;
+    line-height: 60px;
+    border: 2px solid #fff;
+    font-size: 19pt;
+    width: 100%;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    color: #fff;
+  }
+
+  .splash {
+    min-width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 8vh;
+  }
+
+  .modal {
+    -webkit-backdrop-filter: blur(2pt);
+    backdrop-filter: blur(2pt);
+  }
+
+  .modal-content {
+    min-width: 75%;
+  }
+
+  ul {
+    margin-top: 4vh;
+  }
+
+  li {
+    font-size: 16pt;
+  }
+
+  .fineprint {
+    line-height: 100%;
+  }
+
+  .fineprint span {
+    font-size: 8pt;
+  }
+
+  .close {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    height: 40px;
+    line-height: 40px;
+    border: 2px solid #fff;
+    font-size: 19pt;
+    margin-bottom: 5px;
+  }
+
+  footer span {
+    font-size: 14pt;
+  }
+
+  #credits-divider {
+    display: none;
+  }
+
+  footer:nth-child(5) > span:nth-child(1) > a:nth-child(3) {
+    margin-top: 4vh;
+  }
+
+  /* modal */
+  .modal-content {
+    margin-top: 15vh;
+    margin-bottom: 8vh;
+  }
+
+  .modal h2 {
+    font-weight: bold;
+    font-size: 19pt;
+  }
+
+  .modal h2,
+  .fineprint {
+    margin-top: 2vh;
+    margin-bottom: 4vh;
+  }
+
+  .modal h3 {
+    font-size: 16pt;
+  }
+}

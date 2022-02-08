@@ -1,0 +1,326 @@
+.drink-maker {
+  margin-top: 36px;
+  height: 288px;
+  font-family: CALICOMP;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.drink-maker h3 {
+  font-weight: 400;
+  font-family: CyberpunkWaifus;
+  text-align: center;
+  width: 100%;
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.drink-frame {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  border-top: 4px solid #fff;
+  border-bottom: 4px solid #fff;
+  position: relative;
+  image-rendering: optimizeSpeed;
+  image-rendering: -moz-crisp-edges;
+  image-rendering: -o-crisp-edges;
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: pixelated;
+  image-rendering: optimize-contrast;
+  -ms-interpolation-mode: nearest-neighbor;
+}
+
+.drink-ice,
+.drink-age,
+.drink-adelhyde,
+.drink-bronson,
+.drink-delta,
+.drink-flanergide,
+.drink-karmotrine,
+.drink-shaker {
+  position: absolute;
+  cursor: pointer;
+}
+
+.drink-ice p,
+.drink-age p {
+  width: 100%;
+  font-size: 16px;
+  letter-spacing: 1px;
+  text-align: center;
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+
+.drink-ice img,
+.drink-age img {
+  width: 45px;
+  margin-left: 6px;
+  opacity: 0.5;
+}
+
+.drink-ice {
+  top: 16px;
+  left: 14px;
+  height: 104px;
+  width: 59px;
+  cursor: pointer;
+}
+
+.drink-age {
+  top: 125px;
+  left: 14px;
+  height: 104px;
+  width: 59px;
+  cursor: pointer;
+}
+
+.drink-adelhyde,
+.drink-bronson,
+.drink-delta,
+.drink-flanergide,
+.drink-karmotrine {
+  height: 104px;
+  width: 129px;
+}
+
+.drink-adelhyde p,
+.drink-bronson p,
+.drink-delta p,
+.drink-flanergide p,
+.drink-karmotrine p {
+  font-size: 16px;
+  letter-spacing: 1px;
+  margin-left: 7px;
+  margin-top: 10px;
+  margin-bottom: 6px;
+}
+
+.drink-adelhyde img,
+.drink-bronson img,
+.drink-delta img,
+.drink-flanergide img,
+.drink-karmotrine img {
+  width: 34px;
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+.drink-adelhyde {
+  top: 16px;
+  left: 87px;
+}
+
+.drink-bronson {
+  top: 16px;
+  left: 224px;
+}
+
+.drink-delta {
+  top: 16px;
+  left: 361px;
+}
+
+.drink-flanergide {
+  top: 126px;
+  left: 87px;
+}
+
+.drink-karmotrine {
+  top: 126px;
+  left: 361px;
+}
+
+.drink-flex-contain {
+  display: flex;
+  height: 65px;
+  pointer-events: none;
+}
+
+.drink-columns {
+  height: 100%;
+  width: 62%;
+  margin-left: 10px;
+  margin-right: 1px;
+}
+
+.column-block {
+  height: 28.5px;
+  width: 13.5px;
+  background: transparent;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  opacity: 0.5;
+  display: inline-block;
+  margin-left: -5.9px;
+}
+
+.adelhyde-block {
+  border: 1.5px solid #e75d78;
+}
+
+.bronson-block {
+  border: 1.5px solid #e5b27f;
+}
+
+.delta-block {
+  border: 1.5px solid #7f9ce5;
+}
+
+.flanergide-block {
+  border: 1.5px solid #b8dd9e;
+}
+
+.karmotrine-block {
+  border: 1.5px solid #99e9ea;
+}
+
+.drink-shaker {
+  width: 129px;
+  top: 126px;
+  left: 224px;
+  cursor: default;
+}
+
+.shaker {
+  width: 52px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 12px;
+}
+
+.drink-slot {
+  position: absolute;
+  top: 2px;
+  left: 25px;
+  height: 114px;
+  width: 78px;
+  opacity: 0;
+}
+
+.nameplate {
+  width: 98%;
+  margin-left: 1px;
+  margin-top: 12px;
+  z-index: 1;
+  position: relative;
+  cursor: pointer;
+}
+
+.shaker-grid {
+  position: absolute;
+  top: 123px;
+  padding: 0;
+  height: 28px !important;
+  width: 78%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  left: 24px;
+}
+
+.grid2 {
+  top: 133.5px;
+}
+
+.shaker-grid-block {
+  height: 5px;
+  width: 13px;
+  border: 2px solid #fff;
+  display: inline-block;
+  opacity: 0;
+  margin-left: -7px;
+}
+
+.drink-name {
+  position: absolute;
+  top: 117px;
+  width: 90%;
+  margin-left: 12px;
+  font-size: 14px;
+  pointer-events: none;
+}
+
+.drink-button {
+  position: absolute;
+  width: 118px;
+  cursor: pointer;
+}
+
+.drink-button button {
+  background-size: cover !important;
+  width: 100%;
+  height: 40.5px;
+  border: none;
+}
+
+.drink-button p {
+  position: absolute;
+  top: 14px;
+  margin: 0;
+  width: 100%;
+  text-align: center;
+  color: #000;
+  pointer-events: none;
+}
+
+.reset-button {
+  top: 237px;
+  left: 92px;
+}
+
+.reset-button button {
+  cursor: pointer;
+}
+
+.reset-button button:active {
+  background: url(../img/drink-maker/sprite_button_orange_pressed.png) !important;
+  background-size: cover !important;
+  margin-top: 1px;
+}
+
+.mix-button {
+  top: 237px;
+  left: 368px;
+  font-family: 'CALICOMP2';
+}
+
+.mix-button button {
+  background: url(../img/drink-maker/sprite_button_red.png);
+  cursor: pointer;
+}
+
+.mix-button button:active {
+  background: url(../img/drink-maker/sprite_button_green_pressed.png);
+  background-size: cover !important;
+  margin-top: 1px;
+}
+
+.mix-button button:disabled {
+  margin-top: 0px !important;
+  cursor: not-allowed !important;
+}
+
+.adelhyde-text {
+  color: #e75d78;
+}
+
+.bronson-text {
+  color: #e5b27f;
+}
+
+.delta-text {
+  color: #7f9ce5;
+}
+
+.flanergide-text {
+  color: #b8dd9e;
+}
+
+.karmotrine-text {
+  color: #99e9ea;
+}
