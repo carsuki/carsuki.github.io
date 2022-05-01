@@ -1,22 +1,16 @@
 <!DOCTYPE html>
 
-<html lang="en" style="background: #000">
+<html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, maximum-scale=5"
-    />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
 
     <title>carsuki</title>
-    <link rel="icon" type="image/png" href="img/favicon.png" />
-    <link rel="canonical" href="https://carsuki.moe" />
+    <link rel="icon" type="image/png" href="img/favicon.png">
+    <link rel="canonical" href="https://carsuki.moe">
 
-    <meta name="author" content="carsuki" />
-    <meta
-      name="description"
-      content="Utterly insane internet person"
-    />
+    <meta name="author" content="carsuki">
+    <meta name="description" content="Utterly insane internet person">
 
     <!-- opengraph -->
     <meta
@@ -47,239 +41,272 @@
 
     <!-- styles -->
     <link rel="stylesheet" href="css/style.css" media="print" onload="this.media='all'; this.onload=null;">
-    <link rel="stylesheet" href="css/mobile.css" media="print" onload="this.media='all'; this.onload=null;">
 
-    <!-- less critical styles -->
-    <link rel="stylesheet" href="css/modal.css">
-    <link rel="stylesheet" href="css/watch.css">
-    <link rel="stylesheet" href="css/alert.css">
-    <link rel="stylesheet" href="css/drinkmaker.css">
-
+    <script src="js/musicplayer.js"></script>
     <!-- javascript -->
-    <script src="js/randomgif.js"></script>
+    <!-- <script src="js/randomgif.js"></script>
     <script src="js/assigngif.js" defer></script>
     <script src="js/randomsplash.js" defer></script>
-    <script src="js/musicplayer.js"></script>
     <script src="js/modal.js" defer></script>
     <script src="js/eyeballtools.js" defer></script>
-    <script src="js/drinkmaker.js" defer></script>
+    <script src="js/drinkmaker.js" defer></script> -->
   </head>
 
-  <body>
-    <main>
-      <header>
-        <figure class="header-img">
-          <img src="img/eyeball.png" alt="carsuki eyeball" />
-        </figure>
-        <h1>carsuki</h1>
-        <h2>Utterly insane internet person</h2>
-        <div>
-          <a href="https://github.com/carsuki">
-            <figure class="social-icon">
-              <img src="img/icons/github.png" alt="github" />
-            </figure>
-          </a>
-        </div>
-      </header>
-      <!-- alerts will appear here -->
-      <section class="gif-container">
-        <figure class="gif">
-          <img id="random" src="#" alt="Today's Selection" />
-          <figcaption>
-            Today's Selection <span id="label-span">(<a id="source-label" class="source-label" href="#"></a></span>)
-          </figcaption>
-        </figure>
-      </section>
-      <section class="player">
-        <div class="cover-container">
-          <img class="player-cover" id="cover" src="img/cover-generic.png" alt="album cover">
-        </div>
-        <div class="player-info">
-          <div class="player-label header-label">Now Playing</div>
-          <div class="player-label title-label" id="title">Song Name</div>
-          <div class="player-label artist-label" id="artist">Artist Name</div>
-          <div class="player-label album-label" id="album">Album Name</div>
-        </div>
-      </section>
-      <figure class="splash">
-        <img src="img/sukisplash.png" alt="carsuki splash image" />
-      </figure>
-      <section class="drink-maker">
-        <div></div>
-        <div class="drink-frame">
-          <img src="img/drink-maker/drink-frame.png" alt="drink maker background">
-          <div class="drink-ice" onclick="activateIce();">
-            <p>Ice</p>
-            <img src="img/drink-maker/sprite_ice.png" alt="ice">
-          </div>
-          <div class="drink-age" onclick="activateAge();">
-            <p>Age</p>
-            <img src="img/drink-maker/sprite_age.png" alt="age">
-          </div>
-          <div class="drink-adelhyde" onclick="addAdelhyde();">
-            <p>Adelhyde</p>
-            <div class="drink-flex-contain">
-              <img src="img/drink-maker/sprite_adelhyde.png" onclick="addAdelhyde();" alt="adelhyde">
-              <div class="drink-columns adelhyde-columns">
-                <div class="column-block adelhyde-block adelhyde1"></div>
-                <div class="column-block adelhyde-block adelhyde2"></div>
-                <div class="column-block adelhyde-block adelhyde3"></div>
-                <div class="column-block adelhyde-block adelhyde4"></div>
-                <div class="column-block adelhyde-block adelhyde5"></div>
-                <div class="column-block adelhyde-block adelhyde6"></div>
-                <div class="column-block adelhyde-block adelhyde7"></div>
-                <div class="column-block adelhyde-block adelhyde8"></div>
-                <div class="column-block adelhyde-block adelhyde9"></div>
-                <div class="column-block adelhyde-block adelhyde10"></div>
-              </div>
+  <body id="random">
+    
+    <!-- menubar -->
+    
+    <div class="menubar">
+      <div class="menubar-content">
+        <div class="menubar-item-container">
+          <span class="menubar-item" onclick="dropdown.call(this);window.currentButton = '#apple-logo'" id="apple-logo">¤</span>
+          <div id="apple-dropdown" class="item-dropdown box-shadow hide">
+            <div class="item-link-container" onclick="about();">
+              <a>About This Macintosh...</a>
             </div>
-          </div>
-          <div class="drink-bronson" onclick="addBronson();">
-            <p>Bronson Ext</p>
-            <div class="drink-flex-contain">
-              <img src="img/drink-maker/sprite_bronson.png" alt="bronson extract">
-              <div class="drink-columns bronson-columns">
-                <div class="column-block bronson-block bronson1"></div>
-                <div class="column-block bronson-block bronson2"></div>
-                <div class="column-block bronson-block bronson3"></div>
-                <div class="column-block bronson-block bronson4"></div>
-                <div class="column-block bronson-block bronson5"></div>
-                <div class="column-block bronson-block bronson6"></div>
-                <div class="column-block bronson-block bronson7"></div>
-                <div class="column-block bronson-block bronson8"></div>
-                <div class="column-block bronson-block bronson9"></div>
-                <div class="column-block bronson-block bronson10"></div>
-              </div>
-            </div>
-          </div>
-          <div class="drink-delta" onclick="addDelta();">
-            <p>Pwd Delta</p>
-            <div class="drink-flex-contain">
-              <img src="img/drink-maker/sprite_delta.png" alt="powdered delta">
-              <div class="drink-columns delta-columns">
-                <div class="column-block delta-block delta1"></div>
-                <div class="column-block delta-block delta2"></div>
-                <div class="column-block delta-block delta3"></div>
-                <div class="column-block delta-block delta4"></div>
-                <div class="column-block delta-block delta5"></div>
-                <div class="column-block delta-block delta6"></div>
-                <div class="column-block delta-block delta7"></div>
-                <div class="column-block delta-block delta8"></div>
-                <div class="column-block delta-block delta9"></div>
-                <div class="column-block delta-block delta10"></div>
-              </div>
-            </div>
-          </div>
-          <div class="drink-flanergide" onclick="addFlanergide();">
-            <p>Flanergide</p>
-            <div class="drink-flex-contain">
-              <img src="img/drink-maker/sprite_flanergide.png" alt="flanergide">
-              <div class="drink-columns flanergide-columns">
-                <div class="column-block flanergide-block flanergide1"></div>
-                <div class="column-block flanergide-block flanergide2"></div>
-                <div class="column-block flanergide-block flanergide3"></div>
-                <div class="column-block flanergide-block flanergide4"></div>
-                <div class="column-block flanergide-block flanergide5"></div>
-                <div class="column-block flanergide-block flanergide6"></div>
-                <div class="column-block flanergide-block flanergide7"></div>
-                <div class="column-block flanergide-block flanergide8"></div>
-                <div class="column-block flanergide-block flanergide9"></div>
-                <div class="column-block flanergide-block flanergide10"></div>
-              </div>
-            </div>
-          </div>
-          <div class="drink-karmotrine" onclick="addKarmotrine();">
-            <p>Karmotrine</p>
-            <div class="drink-flex-contain">
-              <img src="img/drink-maker/sprite_karmotrine.png" alt="karmotrine">
-              <div class="drink-columns karmotrine-columns">
-                <div class="column-block karmotrine-block karmotrine1"></div>
-                <div class="column-block karmotrine-block karmotrine2"></div>
-                <div class="column-block karmotrine-block karmotrine3"></div>
-                <div class="column-block karmotrine-block karmotrine4"></div>
-                <div class="column-block karmotrine-block karmotrine5"></div>
-                <div class="column-block karmotrine-block karmotrine6"></div>
-                <div class="column-block karmotrine-block karmotrine7"></div>
-                <div class="column-block karmotrine-block karmotrine8"></div>
-                <div class="column-block karmotrine-block karmotrine9"></div>
-                <div class="column-block karmotrine-block karmotrine10"></div>
-              </div>
-            </div>
-          </div>
-          <div class="drink-button reset-button">
-            <button onmousedown="resetTextShift();" onmouseup="resetTextShift2();" onclick="resetAll();" style="background: url(img/drink-maker/sprite_button_orange.png);"></button>
-            <p>Reset</p>
-          </div>
-          <div class="drink-shaker">
-            <img class="shaker" src="img/drink-maker/sprite_shaker.png" alt="drink shaker">
-            <img class="drink-slot" src="" alt="no drink made!">
-            <img class="nameplate" src="img/drink-maker/nameplate.png" alt="name border">
-            <p class="drink-name"></p>
-            <div class="shaker-grid">
-              <div class="shaker-grid-block block1"></div>
-              <div class="shaker-grid-block block2"></div>
-              <div class="shaker-grid-block block3"></div>
-              <div class="shaker-grid-block block4"></div>
-              <div class="shaker-grid-block block5"></div>
-            </div>
-            <div class="shaker-grid grid2">
-              <div class="shaker-grid-block block6"></div>
-              <div class="shaker-grid-block block7"></div>
-              <div class="shaker-grid-block block8"></div>
-              <div class="shaker-grid-block block9"></div>
-              <div class="shaker-grid-block block10"></div>
-            </div>
-          </div>
-          <div class="drink-button mix-button">
-            <button onmousedown="mixTextShift();" onmouseup="mixTextShift2();" onclick="triggerMix();" disabled></button>
-            <p>Mix</p>
           </div>
         </div>
-      </section>
-      <footer>
-        <span>carsuki '20 - <a href="https://github.com/carsuki/carsuki.github.io/">page source</a> -&nbsp;<a class="opener" style="text-decoration: underline; cursor: pointer">acknowledgements</a></span>
-      </footer>
-
-      <aside class="modal">
-        <div class="modal-content">
-          <h2>acknowledgements</h2>
-          <h3>javascript help from:</h3>
-          <ul>
-            <li>The_Lucifer</li>
-            <li>1Conan</li>
-            <li>The Man</li>
-          </ul>
-          <h3>SEO help from MegaDev</h3>
-          <h3>
-            all GIF creators listed in
-            <a href="https://carsuki.moe/js/randomgif.js">js/randomgif.js</a>
-          </h3>
-          <h3>
-            CyberpunkWaifus font by
-            <a href="https://github.com/tokamach/newtab/blob/master/fonts/CyberpunkWaifus.ttf">tokamach</a>
-          </h3>
-          <h3>VA-11 Hall-A assets and fonts belong to Sukeban Games</h3>
-          <h3>
-            'Now Playing' powered by
-            <a href="https://last.fm">AudioScrobbler</a>
-          </h3>
-          <section class="logos">
-            <figure class="geobutton">
-              <img src="img/buttons/16bit.gif" alt="BEST VIEWED 1024x768 16Bit Colour">
-            </figure>
-            <figure class="geobutton">
-              <img src="img/buttons/chillpill.gif" alt="take a chill pill">
-            </figure>
-            <figure class="geobutton">
-              <img src="img/buttons/carsukinow.gif" alt="carsuki Now!">
-            </figure>
-          </section>
-          <section class="fineprint">
-            <span>everything on this website written/created by myself (carsuki) is licensed under the <a href="https://github.com/carsuki/npl-2.0/">NPL 2.0 license</a>, with this additional exception: no individual named "pwn20wnd" or anything similar may use anything on this website (and the accompanying github repository) that I have created. a copy of the license is available at https://github.com/carsuki/npl-2.0/ </span>
-          </section>
-          <span class="close">close</span>
+        <div class="menubar-item-container">
+          <span class="menubar-item" onclick="dropdown.call(this);window.currentButton = '#file';" id="file">File</span>
+          <div id="file-dropdown" class="item-dropdown box-shadow hide" style="min-width: 180px;">
+            <div class="item-link-container disabled">
+              <a>New</a><div><span><span class="command">A</span>N</span></div>
+            </div>
+            <div class="item-link-container disabled">
+              <a>Open</a><div><span><span class="command">A</span>O</span></div>
+            </div>
+            <div class="item-link-container">
+              <a>Print</a><div><span><span class="command">A</span>P</span></div>
+            </div>
+            <div class="item-link-container disabled">
+              <a>Close Window</a><div><span><span class="command">A</span>W</span></div>
+            </div>
+          </div>
         </div>
-      </aside>
-    </main>
+        <div class="menubar-item-container">
+          <span class="menubar-item" onclick="dropdown.call(this);window.currentButton = '#edit';" id="edit">Edit</span>
+          <div id="edit-dropdown" class="item-dropdown box-shadow hide" style="min-width: 135px;">
+            <div class="item-link-container">
+              <a>Undo</a><div><span><span class="command">A</span>Z</span></div>
+            </div>
+            <div class="divider"></div>
+            <div class="item-link-container disabled">
+              <a>Copy</a><div><span><span class="command">A</span>C</span></div>
+            </div>
+            <div class="item-link-container disabled">
+              <a>Paste</a><div><span><span class="command">A</span>V</span></div>
+            </div>
+            <div class="item-link-container disabled">
+              <a>Clear</a>
+            </div>
+            <div class="item-link-container disabled">
+              <a>Select All</a><div><span><span class="command">A</span>A</span></div>
+            </div>
+            <div class="divider"></div>
+            <div class="item-link-container disabled">
+              <a>Show Clipboard</a>
+            </div>
+          </div>
+        </div>
+        <div class="menubar-item-container">
+          <span class="menubar-item" onclick="dropdown.call(this);window.currentButton = '#links';" id="links">Portals</span>
+          <div id="special-dropdown" class="item-dropdown box-shadow hide">
+            <div class="item-link-container">
+              <a href="https://github.com/carsuki">GitHub...</a>
+            </div>
+            <div class="item-link-container">
+              <a href="https://dribbble.com/carsuki">Dribbble...</a>
+            </div>
+            <div class="item-link-container disabled">
+              <a>YouTube...</a>
+            </div>
+            <div class="item-link-container disabled">
+              <a>More...</a>
+            </div>
+          </div>
+        </div>
+        <div class="menubar-item-container">
+          <span class="menubar-item" onclick="dropdown.call(this);window.currentButton = '#special';" id="special">Special</span>
+          <div id="special-dropdown" class="item-dropdown box-shadow hide">
+            <div class="item-link-container">
+              <a onclick="mainwin();">Main Window</a>
+            </div>
+            <div class="item-link-container">
+              <a onclick="player();">Now Playing</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- windows -->
+    
+    <div class="window box-shadow" id="main-window">
+      <div class="window-header">
+        <button class="window-close-button" onclick="this.parentNode.parentNode.style.display = 'none';"></button>
+        <span>carsuki</span>
+      </div>
+      <div class="window-main">
+        <p>Hi!</p>
+        <span class="gif-source">source: <a href="#" class="source-label"></a></span>
+      </div>
+    </div>
+    
+    <div class="window box-shadow" id="now-playing">
+      <div class="window-header">
+        <button class="window-close-button" onclick="this.parentNode.parentNode.style.display = 'none';"></button>
+        <span>Now Playing</span>
+      </div>
+      <div class="window-main">
+        <div class="player">
+          <img id="cover" class="box-shadow">
+          <div class="player-info">
+            <span id="title">Title</span>
+            <span id="artist">Artist</span>
+            <span id="album">Album</span>
+            </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="window box-shadow" style="width: 420px;" id="about-this-macintosh">
+      <div class="window-header">
+        <button class="window-close-button" onclick="this.parentNode.parentNode.style.display = 'none';"></button>
+        <span>About This Macintosh</span>
+      </div>
+      <div class="window-main">
+        <div class="sysinfo-columns">
+          <div class="sysinfo-column" id="first-column">
+            <img src="img/macintosh-plus.png" id="macicon">
+            <span class="sysinfo-header" id="model-header">Macintosh Plus Ultra</span>
+          </div>
+          <div class="sysinfo-column" id="version-column">
+            <span class="sysinfo-header">System Software 7.0.0</span>
+            <span>© Suki Computer, Inc. 1983-20XX</span>
+          </div>
+        </div>
+        <div class="sysinfo-columns" style="border-bottom: 1px solid #000; padding-bottom: 0px;">
+          <div class="sysinfo-column memory-column" id="first-column">
+            <span class="sysinfo-header">Total Memory :</span>
+            <span class="sysinfo-value" id="first-value">2,048G</span>
+          </div>
+          <div class="sysinfo-column memory-column">
+            <span class="sysinfo-header">Largest Unused Block :</span>
+            <span class="sysinfo-value">700G</span>
+          </div>
+        </div>
+        <div class="sysinfo-columns" style="padding-top: 0px; padding-right: 0; padding-bottom: 0;">
+          <div class="sysinfo-column memory-column" id="first-column" style="margin-top: 2px; margin-right: 0;">
+            <span>System Software</span>
+            <span class="sysinfo-value meminfo-value" id="first-value" style="margin-right: 23px;">1,337G</span>
+          </div>
+          <div class="sysinfo-column memory-column" style="width: 45%; margin-top: 2px;">
+            <div class="membar"><div class="membar-fill"></div></div>
+          </div>
+          <div class="sysinfo-column memory-column bar-column">
+            <img class="bar-button arrowup-button" src="img/icon-arrowup.png">
+            <img class="bar-button arrowdown-button" src="img/icon-arrowdown.png">
+            <img class="bar-button resize-button" src="img/icon-resize.png">
+          </div>
+        </div>
+      </div>
+    </div>
+    
   </body>
 </html>
+
+<!-- draggable windows -->
+<script>
+function enableDragging(ele) {
+  var dragging = dragging || false,
+      x, y, Ox, Oy,
+      current;
+      enableDragging.z = enableDragging.z || 1;
+  var handle = document.getElementsByClassName("window-header");
+  for(var i = 0; i < handle.length; i++){   
+  handle[i].onmousedown = function(ev) {
+      current = ev.target.parentNode;
+      dragging = true;
+      x = ev.clientX;
+      y = ev.clientY;
+      Ox = current.offsetLeft;
+      Oy = current.offsetTop;
+      current.style.zIndex = ++enableDragging.z;
+
+      window.onmousemove = function(ev) {
+          if (dragging == true) {
+              var Sx = ev.clientX - x + Ox,
+                  Sy = ev.clientY - y + Oy;
+              current.style.top = Sy + "px";
+              current.style.left = Sx + "px";
+              return false;
+          }
+      };
+      window.onmouseup = function(ev) {
+          dragging && (dragging = false);
+      }
+  };
+}
+}
+
+var ele = document.getElementsByClassName("window");
+for(var i = 0; i < ele.length; i++){
+  enableDragging(ele[i]);
+}   
+</script>
+
+<!-- dropdown menus -->
+<script>
+
+window.currentDropdown ='none';
+window.currentButton = 'none';
+window.dropdowns = document.getElementsByClassName("item-dropdown");
+
+function dropdown() {
+    var isAlreadyOpen = false;
+    if (!this.nextElementSibling.classList.contains('hide')) {
+      isAlreadyOpen = true;
+    }
+    var dropdowns = document.getElementsByClassName("item-dropdown");
+    for (var d = 0; d < dropdowns.length; d++) {
+      var openDropdown = dropdowns[d];
+      if (!openDropdown.classList.contains('hide')) {
+        openDropdown.classList.toggle("hide");
+      }
+    }
+    if(!isAlreadyOpen)
+    {
+      // if the dropdown was hidden when clicked then show it
+      this.nextElementSibling.classList.toggle("hide");    
+    }
+}
+
+window.onclick = function(e) {
+  if (!event.target.matches(currentButton)) {
+  var i;
+  for (i = 0; i < dropdowns.length; i++) {
+    var openDropdown = dropdowns[i];
+      openDropdown.classList.add("hide"); 
+    }
+  }
+}
+</script>
+
+<!-- open windows -->
+<script>
+function about() {
+  document.getElementById("about-this-macintosh").style.display = "block";
+}
+
+function player() {
+  document.getElementById("now-playing").style.display = "block";
+}
+
+function mainwin() {
+  document.getElementById("main-window").style.display = "block";
+}
+</script>
+
+<!-- gif scripts -->
+<script src="js/randomgif.js"></script>
+<script src="js/assigngif.js"></script>

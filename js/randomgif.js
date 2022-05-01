@@ -60,11 +60,7 @@ const randomgifs = [
     gif: "img/gif/11.gif",
     link: "",
   },
-  {
-    name: "fitzfactor",
-    gif: "img/gif/12.gif",
-    link: "https://fitzfactor.com",
-  },
+  
   {
     name: "Unknown",
     gif: "img/gif/13.gif",
@@ -74,11 +70,6 @@ const randomgifs = [
     name: "Omoide Poroporo",
     gif: "img/gif/14.gif",
     link: "https://myanimelist.net/anime/1029/Omoide_Poroporo",
-  },
-  {
-    name: "grimciitys",
-    gif: "img/gif/15.gif",
-    link: "https://deviantart.com/grimciitys",
   },
   {
     name: "Devilman: Tanjou-hen",
@@ -98,11 +89,6 @@ const randomgifs = [
   {
     name: "Unknown",
     gif: "img/gif/19.gif",
-    link: "",
-  },
-  {
-    name: "Unknown",
-    gif: "img/gif/20.gif",
     link: "",
   },
   {
@@ -145,11 +131,6 @@ const randomgifs = [
     name: "Angel Cop",
     gif: "img/gif/28.gif",
     link: "https://myanimelist.net/anime/1351/Angel_Cop",
-  },
-  {
-    name: "supyrb",
-    gif: "img/gif/29.gif",
-    link: "https://twitter.com/supyrb",
   },
   {
     name: "Unknown",
@@ -195,11 +176,6 @@ const randomgifs = [
     name: "kirokaze",
     gif: "img/gif/38.gif",
     link: "https://deviantart.com/kirokaze/",
-  },
-  {
-    name: "Valenberg",
-    gif: "img/gif/39.gif",
-    link: "https://valenberg.tumblr.com",
   },
   {
     name: "mienar",
@@ -262,11 +238,6 @@ const randomgifs = [
     link: "https://anasabdin.tumblr.com/",
   },
   {
-    name: "Violet Evergarden",
-    gif: "img/gif/52.gif",
-    link: "https://myanimelist.net/anime/33352/Violet_Evergarden",
-  },
-  {
     name: "The Garden of Words",
     gif: "img/gif/53.gif",
     link: "https://myanimelist.net/anime/16782/Kotonoha_no_Niwa",
@@ -285,16 +256,6 @@ const randomgifs = [
     name: "Unknown",
     gif: "img/gif/56.gif",
     link: "",
-  },
-  {
-    name: "Unknown",
-    gif: "img/gif/57.gif",
-    link: "",
-  },
-  {
-    name: "Mike Black",
-    gif: "img/gif/58.gif",
-    link: "https://twitter.com/kurtruslfanclub/",
   },
   {
     name: "198X",
@@ -322,11 +283,6 @@ const randomgifs = [
     link: "https://myanimelist.net/anime/16782/Kotonoha_no_Niwa",
   },
   {
-    name: "lennsan",
-    gif: "img/gif/64.gif",
-    link: "https://lennsan.tumblr.com",
-  },
-  {
     name: "Valenberg for VirtuaVerse",
     gif: "img/gif/65.gif",
     link: "https://valenberg.tumblr.com",
@@ -337,19 +293,9 @@ const randomgifs = [
     link: "https://myanimelist.net/anime/1/Cowboy_Bebop",
   },
   {
-    name: "Valenberg",
-    gif: "img/gif/67.gif",
-    link: "https://valenberg.tumblr.com",
-  },
-  {
     name: "Karigurashi no Arietty",
     gif: "img/gif/68.gif",
     link: "https://myanimelist.net/anime/7711/Karigurashi_no_Arrietty",
-  },
-  {
-    name: "snatti",
-    gif: "img/gif/69.gif",
-    link: "https://www.deviantart.com/snatti89/",
   },
   {
     name: "einsbern",
@@ -367,25 +313,12 @@ const randomgifs = [
     link: "https://artifiziell.tumblr.com",
   },
   {
-    name: "Valenberg",
-    gif: "img/gif/73.gif",
-    link: "https://valenberg.tumblr.com",
-  },
-  {
     name: "Peanuts",
     gif: "img/gif/74.gif",
     link: "https://www.youtube.com/watch?v=gvqmLCrrbZE",
   },
-  {
-    name: "JAVITOZEEK",
-    gif: "img/gif/75.gif",
-    link: "https://giphy.com/channel/JAVITOZEEK",
-  },
-  {
-    name: "Valenberg",
-    gif: "img/gif/76.gif",
-    link: "https://valenberg.tumblr.com",
-  },
+
+
   {
     name: "yaspes",
     gif: "img/gif/77.gif",
@@ -395,22 +328,13 @@ const randomgifs = [
     name: "yaspes",
     gif: "img/gif/77.gif",
     link: "https://yaspes.tumblr.com",
-  },
-  {
-    name: "Sorapoi",
-    gif: "img/gif/78.gif",
-    link: "https://www.pixiv.net/en/users/25185071",
   },
   {
     name: "Unknown",
     gif: "img/gif/79.gif",
     link: "",
   },
-  {
-    name: "arkhai2",
-    gif: "img/gif/80.gif",
-    link: "https://reddit.com/u/arkhai2",
-  },
+  
   {
     name: "zealotlee",
     gif: "img/gif/81.gif",
@@ -434,17 +358,6 @@ const randomgifs = [
     link: "",
   },
   {
-    name: "Unknown",
-    gif: "img/gif/85.gif",
-    link: "",
-  },
-  {
-    name: "7onsa",
-    gif: "img/gif/86.gif",
-    link:
-      "https://7onsa.tumblr.com/post/622259490462613504/%E5%B9%B4%E4%B8%AD%E7%84%A1%E4%BC%91",
-  },
-  {
     name: "mienar",
     gif: "img/gif/87.gif",
     link: "https://mienar.tumblr.com",
@@ -465,11 +378,6 @@ const randomgifs = [
     link: "https://myanimelist.net/anime/47/Akira",
   },
   {
-    name: "flooko",
-    gif: "img/gif/91.gif",
-    link: "https://www.instagram.com/flooko/",
-  },
-  {
     name: "Unknown",
     gif: "img/gif/92.gif",
     link: "",
@@ -482,11 +390,6 @@ const randomgifs = [
   {
     name: "Unknown",
     gif: "img/gif/94.gif",
-    link: "",
-  },
-  {
-    name: "Unknown",
-    gif: "img/gif/95.gif",
     link: "",
   },
   {
@@ -516,11 +419,6 @@ const randomgifs = [
   },
   {
     name: "Unknown",
-    gif: "img/gif/100.gif",
-    link: "",
-  },
-  {
-    name: "Unknown",
     gif: "img/gif/101.gif",
     link: "",
   },
@@ -539,11 +437,7 @@ const randomgifs = [
     gif: "img/gif/104.gif",
     link: "",
   },
-  {
-    name: "Unknown",
-    gif: "img/gif/105.gif",
-    link: "",
-  },
+  
   {
     name: "Unknown",
     gif: "img/gif/106.gif",
@@ -656,11 +550,6 @@ const randomgifs = [
   },
   {
     name: "Unknown",
-    gif: "img/gif/128.gif",
-    link: "",
-  },
-  {
-    name: "Unknown",
     gif: "img/gif/129.gif",
     link: "",
   },
@@ -668,6 +557,26 @@ const randomgifs = [
     name: "InuYasha",
     gif: "img/gif/130.gif",
     link: "https://myanimelist.net/anime/249/InuYasha",
+  },
+  {
+    name: "Unknown",
+    gif: "img/gif/131.gif",
+    link: "",
+  },
+  {
+    name: "InuYasha",
+    gif: "img/gif/132.gif",
+    link: "https://myanimelist.net/anime/249/InuYasha",
+  },
+  {
+    name: "Unknown",
+    gif: "img/gif/133.gif",
+    link: "",
+  },
+  {
+    name: "Beyond the Boundary",
+    gif: "img/gif/134.gif",
+    link: "https://myanimelist.net/anime/18153/Kyoukai_no_Kanata",
   }
 ];
 
