@@ -573,6 +573,26 @@ const randomgifs = [
     name: "Furi Kuri",
     gif: "img/gif/137.gif",
     link: "https://myanimelist.net/anime/227/FLCL",
+  },
+  {
+    name: "Ghost in the Shell",
+    gif: "img/gif/138.gif",
+    link: "https://myanimelist.net/anime/43/Koukaku_Kidoutai",
+  },
+  {
+    name: "Weathering with You",
+    gif: "img/gif/139.gif",
+    link: "https://myanimelist.net/anime/38826/Tenki_no_Ko",
+  },
+  {
+    name: "Neon Genesis Evangelion",
+    gif: "img/gif/140.gif",
+    link: "https://myanimelist.net/anime/30/Neon_Genesis_Evangelion",
+  },
+  {
+    name: "Flavours of Youth",
+    gif: "img/gif/141.gif",
+    link: "https://myanimelist.net/anime/37396/Shikioriori",
   }
 ];
 
