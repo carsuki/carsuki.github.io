@@ -400,3 +400,8 @@ a:visited {
 .source-label {
   pointer-events: all !important;
 }
+
+.intro-container {
+  margin-top: 16px;
+  height: auto;
+}

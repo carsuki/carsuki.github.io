@@ -320,16 +320,6 @@ const randomgifs = [
 
 
   {
-    name: "yaspes",
-    gif: "img/gif/77.gif",
-    link: "https://yaspes.tumblr.com",
-  },
-  {
-    name: "yaspes",
-    gif: "img/gif/77.gif",
-    link: "https://yaspes.tumblr.com",
-  },
-  {
     name: "Unknown",
     gif: "img/gif/79.gif",
     link: "",
@@ -574,9 +564,9 @@ const randomgifs = [
     link: "",
   },
   {
-    name: "Beyond the Boundary",
-    gif: "img/gif/134.gif",
-    link: "https://myanimelist.net/anime/18153/Kyoukai_no_Kanata",
+    name: "Unknown",
+    gif: "img/gif/135.gif",
+    link: "",
   }
 ];
 
