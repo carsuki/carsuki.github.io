@@ -382,11 +382,7 @@ const randomgifs = [
     gif: "img/gif/94.gif",
     link: "",
   },
-  {
-    name: "Unknown",
-    gif: "img/gif/96.gif",
-    link: "",
-  },
+
   {
     name: "Lemon Angel",
     gif: "img/gif/97.gif",
@@ -567,6 +563,16 @@ const randomgifs = [
     name: "Unknown",
     gif: "img/gif/135.gif",
     link: "",
+  },
+  {
+    name: "Unknown",
+    gif: "img/gif/136.gif",
+    link: "",
+  },
+  {
+    name: "Furi Kuri",
+    gif: "img/gif/137.gif",
+    link: "https://myanimelist.net/anime/227/FLCL",
   }
 ];
 
