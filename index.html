@@ -52,7 +52,8 @@
     <script src="js/drinkmaker.js" defer></script> -->
   </head>
 
-  <body id="random">
+  <body>
+  <div class="fakebody">
     
     <!-- menubar -->
     
@@ -75,7 +76,7 @@
             <div class="item-link-container disabled">
               <a>Open</a><div><span><span class="command">A</span>O</span></div>
             </div>
-            <div class="item-link-container">
+            <div class="item-link-container" onclick="window.print();">
               <a>Print</a><div><span><span class="command">A</span>P</span></div>
             </div>
             <div class="item-link-container disabled">
@@ -139,6 +140,8 @@
       </div>
     </div>
     
+    <img src="" id="random">
+    
     <!-- windows -->
     
     <div class="window box-shadow" id="main-window">
@@ -153,7 +156,7 @@
             <p style="margin-top: 4px;">[greeting]</p>
           </center>
         </div>
-        <span class="gif-source">source: <a href="#" class="source-label"></a></span>
+        <p class="gif-source">source: <a href="#" class="source-label"></a></p>
       </div>
     </div>
     
@@ -216,7 +219,25 @@
         </div>
       </div>
     </div>
-    
+  </div>
+  <!-- print document -->
+  <div id="print-doc" style="color: #fff;">
+    <p id="eyeball-p">
+      <center>
+    <code style="font-size: 9px; line-height:2px;">
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;,,,.,##▒▒▒▒▒▒▒#,.,,,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;,,.≤▒▒░░░▒▓▓▓▓▓╬╬╬╬╬▓▓▓▓▓▒▒▒≤≤≥..,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;╓Φ▒╙░░░▒▒▓▓╬╣╬╣╣╣╬╬╬╣╬╬╣╣╬╬╬╬╬▓▓▒▒░░░▒▒╖&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;,╓Φ▒░░░░░▒╠╣╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬▓▓▒░░░░░▒╦╓&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.,╓╬░▒"┤░░~▒╬╣╬╬╬╬╣╣╣╬╣╣╣╬╬╣╣╬╣╣╣╬╬╬╬╣╬╬╣╬╬╬▓▒░░"┤░╚╚½,,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;,@╩░░░░░[(░░╓╬╬╬╬╬╬╬╬╬╬╬╣╣╬╬╬╬╬╬╬╣╣╬╬╬╬╬╬╬╬╬╬╬╬╬▒░░(░░░░░╚▒╖&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;╓Φ╩╚^Ü^¡(∩&gt;¡░╣╣╬╬╬╬╬╬╬╬╬╬╬▓██████████╬╬╬╬╬╬╬╬╬╬╬╬╬╬▓░¡∩∩&gt;¡¡^^╚Å╖&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;╓Φ╩Ü&gt;&gt;.Ü..¡ÜÜ≤▒╠╬╬╬╬╬╬╬╬╬╬▓██████████████▓╬╬╬╬╬╬╬╬╬╬╬╬▒░░Ü..&gt;&gt;&gt;¡!░Å╦&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;╓╬░░░░≤≤.░..░░t≤╠╬╬╬╬╬╬╬╬╬███╬╬╬╠╣████████████╬╬╬╬╬╬╬╬╬╬╬▒░░..░..≤░░░ÜÅ≡&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;,▄╬░░░░░░░░░░░░░░░░╠╬╬╬╬╬╬╣╣▓████████████████████╬╬╬╬╬╬╬╬╬╬╠▒░░░░░░░░░░░░░░░≥&nbsp;&nbsp;<br>²╬▒▒▒░░░░░░░░░░░░░░░╠╬╬╬╬╬╬╬╬▓████████████████████╬╬╬╬╬╬╬╬╬╬╬▒░░░░░░░░░░░░░░░▒╠╛<br>&nbsp;╙▓▒▒░░░░░░░░░░'░░░░╠╬╬╬╬╬╣╬╣╣████████████████████╬╬╣╬╬╬╬╬╬╬╬▒░░~░░░░░░░░░░░#╙&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;╙▀▓▒░░-~~-░~~~░~░╜╬╬╬╬╬╬╣╬╣╬█████████████████╬╬╬╬╣╬╬╬╬╬╬╬╫╚░░~~░-~~░░-╓▒╙&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'▀▓▒≥[((--(¡--(░╠╬╬╬╬╬╬╬╬╬╬╣██████████████╬╬╬╬╬╬╬╬╬╬╬╬╠╬((--(¡(-[(░▒╙&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;▀╝▄░∩∩&gt;¡¡&gt;&gt;¡∩╚╠╬╬╬╬╬╬╬╬╬╬╬╬██████████╬╬╬╬╬╬╬╬╬╬╬╬╬╬╩Ü¡∩&gt;&gt;¡¡∩∩&amp;╚╙&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;╚╬▒░░░░≤≤░░Ü╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬░░≤≤░░≤≤░▒╩&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;╙▀╣▄░░░░░░≤╩╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬░░░░≤░▒╚╙&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└▀╝▓▒▒░░░░╙╠╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╩░░░▒▒▒▒╙&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'╙╚╫▒▒░░░░╠╣╬╬╬╬╬╬╬╬╬╬╬╬╣╬╬╬╬╬╬▒░░▒▒▄╝╩╙&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;╙╙╜╚▄▄╫▒▒╬╬╬╬╬╬╬╬╬╬╬╬╬╠╠▒▄#╚╙╙`&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;╙╙╙╙╙╚╚╙╙╙╙╙╙╙&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+    </code>
+      </center>
+    </p>
+    <p class="print-logo">
+      <center>
+    <code>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;██████▌&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;j████<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;║███▌&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;▐████<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;║███▌&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;█████████&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;▐██████&nbsp;&nbsp;&nbsp;&nbsp;▐████████Γ&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;████████▌&nbsp;&nbsp;████⌐&nbsp;&nbsp;&nbsp;j████&nbsp;&nbsp;║███▌&nbsp;&nbsp;██████&nbsp;&nbsp;j████<br>████▌&nbsp;&nbsp;&nbsp;'████&nbsp;&nbsp;▐████&nbsp;&nbsp;████&nbsp;&nbsp;▐████&nbsp;&nbsp;████⌐&nbsp;j████─&nbsp;&nbsp;&nbsp;▐█▌&nbsp;&nbsp;████µ&nbsp;&nbsp;&nbsp;j████&nbsp;&nbsp;║███▌&nbsp;&nbsp;████&nbsp;&nbsp;&nbsp;&nbsp;▐████<br>████▌&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;████&nbsp;&nbsp;▐████&nbsp;&nbsp;████⌐&nbsp;j██████▌&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;████µ&nbsp;&nbsp;&nbsp;j████&nbsp;&nbsp;║████████&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;▐████<br>████▌&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;▐████████&nbsp;&nbsp;▐████&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;██████▌&nbsp;&nbsp;████µ&nbsp;&nbsp;&nbsp;j████&nbsp;&nbsp;║████████&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;▐████<br>████▌&nbsp;&nbsp;&nbsp;&nbsp;████&nbsp;&nbsp;║████&nbsp;&nbsp;████&nbsp;&nbsp;▐████&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;j██&nbsp;&nbsp;&nbsp;&nbsp;║███▌&nbsp;&nbsp;████µ&nbsp;&nbsp;&nbsp;j████&nbsp;&nbsp;║███▌&nbsp;&nbsp;████&nbsp;&nbsp;&nbsp;&nbsp;▐████<br>&nbsp;&nbsp;╫████████&nbsp;&nbsp;&nbsp;&nbsp;║██████████&nbsp;&nbsp;▐████&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;j██████████▌&nbsp;&nbsp;&nbsp;&nbsp;███████████&nbsp;&nbsp;║███▌&nbsp;&nbsp;██████&nbsp;&nbsp;▐████<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+    </code>
+      </center>
+    </p>
+    <center style="font-size: 20px; font-family: 'DePixel Klein'; margin: 0;">(dot moe)</center>
+  </div>
   </body>
 </html>
 
@@ -310,6 +331,13 @@ function player() {
 function mainwin() {
   document.getElementById("main-window").style.display = "block";
 }
+</script>
+
+<!-- printdoc -->
+<script>
+  document.addEventListener('DOMContentLoaded', (event) => {
+    document.getElementById("print-doc").style.setProperty("color", "black", "important");
+  })
 </script>
 
 <!-- gif scripts -->

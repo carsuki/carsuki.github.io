@@ -9,7 +9,7 @@ var randomset = randomgifs[Math.floor(Math.random() * randomgifs.length)];
 // var randomset = randomgifs[114];
 
 // assign the selected gif to the image element on the page
-document.getElementById("random").style.backgroundImage = 'url(' + randomset.gif + ')';
+document.getElementById("random").src = randomset.gif;
 
 // fill in the source text
 document.getElementsByClassName("source-label")[0].innerHTML = randomset.name;
