@@ -336,7 +336,7 @@ function mainwin() {
 <!-- printdoc -->
 <script>
   document.addEventListener('DOMContentLoaded', (event) => {
-    document.getElementById("print-doc").style.setProperty("color", "black", "important");
+    setTimeout(() => {  document.getElementById("print-doc").style.setProperty("color", "black", "important"); }, 3000);
   })
 </script>
 
