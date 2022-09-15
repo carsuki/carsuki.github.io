@@ -140,7 +140,7 @@
       </div>
     </div>
     
-    <img src="" id="random">
+    <img src="" id="random" onload="printDoc()" onerror="fallbackBG()">
     
     <!-- windows -->
     
@@ -335,9 +335,18 @@ function mainwin() {
 
 <!-- printdoc -->
 <script>
+function printDoc(){
   document.addEventListener('DOMContentLoaded', (event) => {
-    setTimeout(() => {  document.getElementById("print-doc").style.setProperty("color", "black", "important"); }, 3000);
+    document.getElementById("print-doc").style.setProperty("color", "black", "important");
   })
+}
+</script>
+
+<!-- fallback background -->
+<script>
+function fallbackBG(){
+  document.getElementById("random").src = "img/blank.png"
+}
 </script>
 
 <!-- gif scripts -->
