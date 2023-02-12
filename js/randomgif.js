@@ -430,9 +430,9 @@ const randomgifs = [
     link: "",
   },
   {
-    name: "Unknown",
+    name: "Akira",
     gif: "img/gif/107.gif",
-    link: "",
+    link: "https://myanimelist.net/anime/47/Akira",
   },
   {
     name: "Unknown",
