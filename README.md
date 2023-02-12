@@ -1,1 +1,1 @@
-<p align="center">Source for https://carsuki.github.io</p>
+<p align="center">Source for https://carsuki.moe</p>
