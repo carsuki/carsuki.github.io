@@ -178,6 +178,11 @@ const randomgifs = [
     link: "https://deviantart.com/kirokaze/",
   },
   {
+    name: "Valenberg",
+    gif: "img/gif/39.gif",
+    link: "https://valenberg.tumblr.com/post/110835321839/musicvideo-computer-corner-by-valenberg-art-and",
+  },
+  {
     name: "mienar",
     gif: "img/gif/40.gif",
     link: "https://mienar.tumblr.com",
@@ -283,7 +288,7 @@ const randomgifs = [
     link: "https://myanimelist.net/anime/16782/Kotonoha_no_Niwa",
   },
   {
-    name: "Valenberg for VirtuaVerse",
+    name: "Valenberg",
     gif: "img/gif/65.gif",
     link: "https://valenberg.tumblr.com",
   },
@@ -291,6 +296,11 @@ const randomgifs = [
     name: "Cowboy Bebop",
     gif: "img/gif/66.gif",
     link: "https://myanimelist.net/anime/1/Cowboy_Bebop",
+  },
+  {
+    name: "Valenberg",
+    gif: "img/gif/67.gif",
+    link: "https://valenberg.tumblr.com",
   },
   {
     name: "Karigurashi no Arietty",
