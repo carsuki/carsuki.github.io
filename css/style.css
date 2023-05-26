@@ -324,22 +324,33 @@ a:visited {
   font-size: 13pt;
 }
 
+#mem-header,
+#first-value {
+  line-height: 0.5;
+  align-self: flex-end;
+  margin-bottom: 6px;
+}
+
 #model-header {
   align-self: flex-end;
-  margin-left: 6px;
+  margin-left: 8px;
 }
 
 #macicon {
   image-rendering: pixelated;
-  margin-bottom: auto;
+  margin-bottom: 0;
+  align-self: end;
 }
 
 #sysicon {
   height: 15px;
+  image-rendering: pixelated;
+  margin-top: 2px;
 }
 
 #first-column {
   margin-right: 12px;
+  margin-top: 1px;
 }
 
 #version-column {
@@ -366,7 +377,7 @@ a:visited {
 }
 
 .meminfo-value {
-  line-height: 1;
+  line-height: 0.95;
 }
 
 .membar {
