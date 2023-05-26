@@ -130,7 +130,7 @@
           <span class="menubar-item" onclick="dropdown.call(this);window.currentButton = '#special';" id="special">Special</span>
           <div id="special-dropdown" class="item-dropdown box-shadow hide">
             <div class="item-link-container">
-              <a onclick="mainwin();">Main Window</a>
+              <a onclick="mainwindow();">Main Window</a>
             </div>
             <div class="item-link-container">
               <a onclick="player();">Now Playing</a>
@@ -237,13 +237,20 @@
     </code>
       </center>
     </p>
-    <center style="font-size: 20px; font-family: 'DePixel Klein'; margin: 0;">(dot moe)</center>
+    <center style="font-size: 20px; font-family: 'FindersKeepers'; margin: 0;">(dot moe)</center>
   </div>
   </body>
 </html>
 
-<!-- draggable windows -->
+<!-- draggable windows + dropdowns -->
 <script>
+var aboutWin = document.getElementById("about-this-macintosh")
+var playerWin = document.getElementById("now-playing")
+var mainWin = document.getElementById("main-window")
+
+// z-index of highest window
+ztop = 1;
+  
 function enableDragging(ele) {
   var dragging = dragging || false,
       x, y, Ox, Oy,
@@ -258,7 +265,7 @@ function enableDragging(ele) {
       y = ev.clientY;
       Ox = current.offsetLeft;
       Oy = current.offsetTop;
-      current.style.zIndex = ++enableDragging.z;
+      current.style.zIndex = ++ztop;
 
       window.onmousemove = function(ev) {
           if (dragging == true) {
@@ -279,11 +286,9 @@ function enableDragging(ele) {
 var ele = document.getElementsByClassName("window");
 for(var i = 0; i < ele.length; i++){
   enableDragging(ele[i]);
-}   
-</script>
+}
 
-<!-- dropdown menus -->
-<script>
+// dropdown menus
 
 window.currentDropdown ='none';
 window.currentButton = 'none';
@@ -317,20 +322,21 @@ window.onclick = function(e) {
     }
   }
 }
-</script>
 
-<!-- open windows -->
-<script>
+// open windows
 function about() {
-  document.getElementById("about-this-macintosh").style.display = "block";
+  aboutWin.style.zIndex = ++ztop;
+  aboutWin.style.display = "block";
 }
 
 function player() {
-  document.getElementById("now-playing").style.display = "block";
+  playerWin.style.zIndex = ++ztop;
+  playerWin.style.display = "block";
 }
 
-function mainwin() {
-  document.getElementById("main-window").style.display = "block";
+function mainwindow() {
+  mainWin.style.zIndex = ++ztop;
+  mainWin.style.display = "block";
 }
 </script>
 
