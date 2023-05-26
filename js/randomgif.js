@@ -603,6 +603,11 @@ const randomgifs = [
     name: "Flavours of Youth",
     gif: "img/gif/141.gif",
     link: "https://myanimelist.net/anime/37396/Shikioriori",
+  },
+  {
+    name: "Unknown",
+    gif: "img/gif/142.gif",
+    link: "",
   }
 ];
 

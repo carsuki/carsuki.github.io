@@ -6,8 +6,8 @@
 }
 
 @font-face {
-  font-family: "DePixel Klein";
-  src: url("../font/depixelklein.otf");
+  font-family: "Geneva";
+  src: url("../font/FindersKeepers.ttf");
   font-display: swap;
 }
 
@@ -32,7 +32,7 @@
   user-select: none;
   -webkit-user-select: none;
   -moz-user-select: none;
-  cursor: default;
+  cursor: default !important;
 }
 
 /* hide windows */
@@ -58,7 +58,7 @@ body,
 .fakebody {
   height: 100%;
   width: 100%;
-  font-family: "FindersKeepers", sans-serif;
+  font-family: "Geneva", sans-serif;
   font-size: 16pt;
   background: url("../img/wallpaper.png");
   background-size: cover;
@@ -152,8 +152,8 @@ a:visited {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  font-family: "DePixel Klein", sans-serif;
-  font-size: 10pt;
+  font-family: "Geneva", sans-serif;
+  font-size: 16pt;
 
 }
 
@@ -170,9 +170,15 @@ a:visited {
   margin-bottom: 0px;
 }
 
+#artist {
+  font-family: "Tenpoint";
+  font-size: 13pt;
+}
+
 #album {
-  margin-top: 12px;
+  margin-top: 6px;
   font-style: italic;
+  line-height: 0.8;
 }
 
 .menubar {
@@ -408,6 +414,7 @@ a:visited {
   margin: 0;
   margin-left: 8px;
   margin-bottom: 2px;
+  cursor: default;
 }
 
 .source-label {
