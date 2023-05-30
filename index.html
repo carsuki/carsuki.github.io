@@ -41,6 +41,7 @@
 
     <!-- styles -->
     <link rel="stylesheet" href="css/style.css" media="print" onload="this.media='all'; this.onload=null;">
+    <link rel="stylesheet" href="css/mobile.css" media="print" onload="this.media='all'; this.onload=null;">
 
     <script src="js/musicplayer.js"></script>
     <!-- javascript -->
@@ -76,7 +77,7 @@
             <div class="item-link-container disabled">
               <a>Open</a><div><span><span class="command">A</span>O</span></div>
             </div>
-            <div class="item-link-container" onclick="window.print();">
+            <div class="item-link-container" onclick="window.print();" id="printer">
               <a>Print</a><div><span><span class="command">A</span>P</span></div>
             </div>
             <div class="item-link-container disabled">
@@ -206,7 +207,7 @@
         <div class="sysinfo-columns" style="padding-top: 0px; padding-right: 0; padding-bottom: 0;">
           <div class="sysinfo-column memory-column" id="first-column" style="margin-right: 0;">
             <img src="img/syssoft-icon.png" id="sysicon">
-            <span style="margin-left: -10px; line-height: 0.95;">System Software</span>
+            <span id="sys-memory">System Software</span>
             <span class="sysinfo-value meminfo-value" style="margin-right: 24px;">1,069K</span>
           </div>
           <div class="sysinfo-column memory-column" style="width: 45%; margin-top: 2px;">
@@ -356,6 +357,16 @@ function fallbackBG(){
 window.addEventListener('load', function () {
   document.getElementById("print-doc").style.setProperty("color", "black", "important");
 })
+</script>
+
+<!-- disable print on mobile -->
+<script>
+document.addEventListener("DOMContentLoaded", function(event) {
+  if (window.innerWidth < 768) {
+    document.querySelector('#printer').classList.add('disabled');
+    document.querySelector('#printer').onclick = "";
+  }
+});
 </script>
 
 <!-- vercel analytics -->

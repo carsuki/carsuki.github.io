@@ -1,0 +1,77 @@
+@media only screen and (max-width: 550px) {
+  html {
+	max-width: 100vw !important;
+  }
+  .fakebody {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+  }
+  .window {
+	left: 0; 
+	right: 0; 
+	min-width: 90%;
+	max-width: 90%;
+	height: 208px;
+	margin-left: auto; 
+	margin-right: auto; 
+	top: 30%;
+	transform: none;
+  }
+  .window-main {
+	height: 90%;
+  }
+  .menubar {
+	top: 0;
+  }
+  .menubar-content {
+	margin-left: 10px;
+  }
+  #now-playing .window-main {
+	height: 90%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+  }
+  #cover {
+	width: 35%;
+  }
+  .bar-column {
+	height: 100%;
+  }
+  #about-this-macintosh > div.window-main > div:nth-child(3) {
+  	position: absolute;
+	width: auto;
+	right: 0;
+	left: 0;
+	height: auto;
+	bottom: 0;
+	top: 50%;
+  }
+}
+
+/* hacky text wrapping fixes */
+
+/* for when copyright line becomes 2 lines: */
+@media only screen and (max-width: 446px) {
+ #about-this-macintosh > div.window-main > div:nth-child(3) {
+	top: 57%;
+ }
+}
+
+/* for when 'largest unused block' becomes 2 lines: */
+@media only screen and (max-width: 427px) {
+ #about-this-macintosh > div.window-main > div:nth-child(3) {
+	top: 63%;
+ }
+ #sys-memory {
+	margin-left: 0 !important;
+ }
+}
+
+/* for when 'total memory' becomes 2 lines: */
+@media only screen and (max-width: 348px) {
+ #about-this-macintosh > div.window-main > div:nth-child(3) {
+	top: 70%;
+ }
+}
