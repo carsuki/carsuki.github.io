@@ -435,9 +435,9 @@ const randomgifs = [
   },
   
   {
-    name: "Unknown",
+    name: "Patlabor",
     gif: "img/gif/106.gif",
-    link: "",
+    link: "https://myanimelist.net/anime/1288/Kidou_Keisatsu_Patlabor",
   },
   {
     name: "Akira",
@@ -580,7 +580,7 @@ const randomgifs = [
     link: "",
   },
   {
-    name: "Furi Kuri",
+    name: "FLCL",
     gif: "img/gif/137.gif",
     link: "https://myanimelist.net/anime/227/FLCL",
   },
@@ -608,6 +608,76 @@ const randomgifs = [
     name: "Unknown",
     gif: "img/gif/142.gif",
     link: "",
+  },
+  {
+    name: "Unknown",
+    gif: "img/gif/143.gif",
+    link: "",
+  },
+  {
+    name: "Unknown",
+    gif: "img/gif/144.gif",
+    link: "",
+  },
+  {
+    name: "Unknown",
+    gif: "img/gif/145.gif",
+    link: "",
+  },
+  {
+    name: "Serial Experiments Lain",
+    gif: "img/gif/146.gif",
+    link: "https://myanimelist.net/anime/339/Serial_Experiments_Lain",
+  },
+  {
+    name: "Sol Bianca",
+    gif: "img/gif/147.gif",
+    link: "https://myanimelist.net/anime/1443/Sol_Bianca",
+  },
+  {
+    name: "Cowboy Bebop",
+    gif: "img/gif/148.gif",
+    link: "https://myanimelist.net/anime/1/Cowboy_Bebop",
+  },
+  {
+    name: "Unknown",
+    gif: "img/gif/149.gif",
+    link: "",
+  },
+  {
+    name: "Unknown",
+    gif: "img/gif/150.gif",
+    link: "",
+  },
+  {
+    name: "Sailor Moon S",
+    gif: "img/gif/151.gif",
+    link: "https://myanimelist.net/anime/532/Bishoujo_Senshi_Sailor_Moon_S",
+  },
+  {
+    name: "Unknown",
+    gif: "img/gif/152.gif",
+    link: "",
+  },
+  {
+    name: "Unknown",
+    gif: "img/gif/153.gif",
+    link: "",
+  },
+  {
+    name: "Unknown",
+    gif: "img/gif/154.gif",
+    link: "",
+  },
+  {
+    name: "Unknown",
+    gif: "img/gif/155.gif",
+    link: "",
+  },
+  {
+    name: "Unknown",
+    gif: "img/gif/156.gif",
+    link: "http://web.archive.org/web/20130606083014/http://www.kanyewest.com:80/",
   }
 ];
 
