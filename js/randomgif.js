@@ -672,12 +672,12 @@ const randomgifs = [
   {
     name: "Unknown",
     gif: "img/gif/155.gif",
-    link: "",
+    link: "http://web.archive.org/web/20130606083014/http://www.kanyewest.com:80/",
   },
   {
     name: "Unknown",
     gif: "img/gif/156.gif",
-    link: "http://web.archive.org/web/20130606083014/http://www.kanyewest.com:80/",
+    link: "",
   },
   {
     name: "I Dream of Mimi",
