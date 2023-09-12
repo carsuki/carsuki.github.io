@@ -678,6 +678,11 @@ const randomgifs = [
     name: "Unknown",
     gif: "img/gif/156.gif",
     link: "http://web.archive.org/web/20130606083014/http://www.kanyewest.com:80/",
+  },
+  {
+    name: "I Dream of Mimi",
+    gif: "img/gif/157.gif",
+    link: "https://myanimelist.net/anime/458/Buttobi_CPU",
   }
 ];
 
