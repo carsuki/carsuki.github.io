@@ -683,6 +683,11 @@ const randomgifs = [
     name: "I Dream of Mimi",
     gif: "img/gif/157.gif",
     link: "https://myanimelist.net/anime/458/Buttobi_CPU",
+  },
+  {
+    name: "Cowboy Bebop",
+    gif: "img/gif/158.gif",
+    link: "https://myanimelist.net/anime/1/Cowboy_Bebop",
   }
 ];
 
