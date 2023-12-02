@@ -688,6 +688,11 @@ const randomgifs = [
     name: "Cowboy Bebop",
     gif: "img/gif/158.gif",
     link: "https://myanimelist.net/anime/1/Cowboy_Bebop",
+  },
+  {
+    name: "Unknown",
+    gif: "img/gif/159.gif",
+    link: "",
   }
 ];
 
