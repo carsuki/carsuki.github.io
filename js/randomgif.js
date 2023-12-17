@@ -763,6 +763,16 @@ const randomgifs = [
     name: "Hajime no Ippo",
     gif: "img/gif/174.gif",
     link: "https://myanimelist.net/anime/263/Hajime_no_Ippo",
+  },
+  {
+    name: "Unknown",
+    gif: "img/gif/175.gif",
+    link: "",
+  },
+  {
+    name: "Unknown",
+    gif: "img/gif/176.gif",
+    link: "",
   }
 ];
 
