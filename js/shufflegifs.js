@@ -1,17 +1,12 @@
-function shuffle(array) {
-  var currentIndex = array.length, temporaryValue, randomIndex;
-
-  while (0 !== currentIndex) {
-
-    randomIndex = Math.floor(Math.random() * currentIndex);
-    currentIndex -= 1;
-
-    temporaryValue = array[currentIndex];
-    array[currentIndex] = array[randomIndex];
-    array[randomIndex] = temporaryValue;
-  }
-
-  return array;
+function shuffle (array) {
+    var j, x, index;
+    for (index = array.length - 1; index > 0; index--) {
+        j = Math.floor(Math.random() * (index + 1));
+        x = array[index];
+        array[index] = array[j];
+        array[j] = x;
+    }
+    return array;
 }
 
 shuffle(randomgifs);
@@ -19,6 +14,10 @@ shuffle(randomgifs);
 for (let i = 1; i < gifCount; i++) {
   
   var id = i;
+  
+  function navigate(url) {
+    window.location.href = url;
+  }
   
   // creation of a window
   var gifWindow = document.createElement("div");
@@ -35,9 +34,10 @@ for (let i = 1; i < gifCount; i++) {
   
   // fill window with gif
   gifWindow.setAttribute("id", i); 
-  
+
   var gifWinImg = document.createElement("img");
   gifWinImg.src = '../' + randomgifs[id].gif;
+  gifWinImg.href = randomgifs[id].gif;
   
   gifWindow.appendChild(gifWinImg)
   

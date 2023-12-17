@@ -45,6 +45,15 @@
 	height: 100%;
 }
 
-.window:has(img[src*="83"]) {
+.window:has(img[src*="/img/8.gif"]) {
+	width: 145px;
+}
+
+.window:has(img[src*="83.gif"]) {
 	width: 210px;
+}
+
+.img-link {
+	height: 100%;
+	width: max-content;
 }
