@@ -45,11 +45,11 @@ body {
 	height: 100%;
 }
 
-.window:has(img[src*="/img/8.gif"]) {
+.window:has(img[src*="/8.gif"]) {
 	width: 145px;
 }
 
-.window:has(img[src*="/img/83.gif"]) {
+.window:has(img[src*="/83.gif"]) {
 	width: 210px;
 }
 
