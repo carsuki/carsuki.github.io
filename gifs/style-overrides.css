@@ -44,3 +44,7 @@
 	max-height: calc(100% - 20px);
 	height: 100%;
 }
+
+.window:has(img[src*="83"]) {
+	width: 210px;
+}
