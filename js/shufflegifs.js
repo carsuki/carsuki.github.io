@@ -41,7 +41,7 @@ for (let i = 1; i < gifCount; i++) {
   
   gifWindow.appendChild(gifWinImg)
   
-  document.getElementsByClassName("fakebody")[0].append(gifWindow);
+  document.body.append(gifWindow);
 }
 
 var amount = document.querySelectorAll('a').length;
