@@ -16,28 +16,32 @@ function shuffle(array) {
 
 shuffle(randomgifs);
 
-for (let step = 1; step < gifCount; step++) {
-  var contain = document.getElementById("container")
-  var containLink = document.createElement("a");
-  contain.appendChild(containLink);
-
-  var gif = document.createElement("img");
-  gif.setAttribute("id", step); 
-  containLink.appendChild(gif)
-
-  var child = document.getElementById(step);
-  var id = step - 1;
-
-  child.src = '../' + randomgifs[id].gif;
-
-  child.parentElement.href = randomgifs[id].link;
-
-  var cap = document.createElement("p");
-  cap.className = "caption";
-
-  cap.innerHTML = randomgifs[id].name;
-
-  child.parentElement.appendChild(cap);
+for (let i = 1; i < gifCount; i++) {
+  
+  var id = i;
+  
+  // creation of a window
+  var gifWindow = document.createElement("div");
+  gifWindow.classList.add("window", "box-shadow");
+  
+  var gifWinHead = document.createElement("div");
+  gifWinHead.classList.add("window-header");
+  gifWindow.appendChild(gifWinHead);
+  
+  var gifWinHeadText = document.createElement("a");
+  gifWinHeadText.textContent = randomgifs[id].name;
+  gifWinHeadText.href = randomgifs[id].link;
+  gifWinHead.appendChild(gifWinHeadText);
+  
+  // fill window with gif
+  gifWindow.setAttribute("id", i); 
+  
+  var gifWinImg = document.createElement("img");
+  gifWinImg.src = '../' + randomgifs[id].gif;
+  
+  gifWindow.appendChild(gifWinImg)
+  
+  document.getElementsByClassName("fakebody")[0].append(gifWindow);
 }
 
 var amount = document.querySelectorAll('a').length;

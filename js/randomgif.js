@@ -133,9 +133,9 @@ const randomgifs = [
     link: "https://myanimelist.net/anime/1351/Angel_Cop",
   },
   {
-    name: "Unknown",
+    name: "Patlabor 2: The Movie",
     gif: "img/gif/30.gif",
-    link: "",
+    link: "https://myanimelist.net/anime/1096/Kidou_Keisatsu_Patlabor_2_the_Movie",
   },
   {
     name: "1041uuu",
@@ -148,9 +148,9 @@ const randomgifs = [
     link: "https://myanimelist.net/anime/6045/Kimi_ni_Todoke",
   },
   {
-    name: "Unknown",
+    name: "Evangelion 1.0: You Are (Not) Alone",
     gif: "img/gif/33.gif",
-    link: "",
+    link: "https://myanimelist.net/anime/2759/Evangelion__10_You_Are_Not_Alone",
   },
   {
     name: "Golden Boy",
@@ -386,11 +386,6 @@ const randomgifs = [
     name: "Blade Runner",
     gif: "img/gif/93.gif",
     link: "https://www.imdb.com/title/tt0083658/",
-  },
-  {
-    name: "Unknown",
-    gif: "img/gif/94.gif",
-    link: "",
   },
 
   {
@@ -693,6 +688,81 @@ const randomgifs = [
     name: "Unknown",
     gif: "img/gif/159.gif",
     link: "",
+  },
+  {
+    name: "Rurouni Kenshin",
+    gif: "img/gif/160.gif",
+    link: "https://myanimelist.net/anime/45/Rurouni_Kenshin__Meiji_Kenkaku_Romantan",
+  },
+  {
+    name: "Cowboy Bebop",
+    gif: "img/gif/161.gif",
+    link: "https://myanimelist.net/anime/1/Cowboy_Bebop",
+  },
+  {
+    name: "Burn Up! W",
+    gif: "img/gif/162.gif",
+    link: "https://myanimelist.net/anime/769/Burn_Up_W",
+  },
+  {
+    name: "Sailor Moon",
+    gif: "img/gif/163.gif",
+    link: "https://myanimelist.net/anime/530/Bishoujo_Senshi_Sailor_Moon",
+  },
+  {
+    name: "Roujin Z",
+    gif: "img/gif/164.gif",
+    link: "https://myanimelist.net/anime/2000/Roujin_Z",
+  },
+  {
+    name: "5 Centimetres per Second",
+    gif: "img/gif/165.gif",
+    link: "https://myanimelist.net/anime/1689/Byousoku_5_Centimeter",
+  },
+  {
+    name: "Cat's Eye",
+    gif: "img/gif/166.gif",
+    link: "https://myanimelist.net/anime/2043/Cats_Eye",
+  },
+  {
+    name: "Battle Angel Alita",
+    gif: "img/gif/167.gif",
+    link: "https://myanimelist.net/anime/1016/Gunnm",
+  },
+  {
+    name: "Omoide no Marnie",
+    gif: "img/gif/168.gif",
+    link: "https://myanimelist.net/anime/21557/Omoide_no_Marnie",
+  },
+  {
+    name: "Yu Yu Hakusho",
+    gif: "img/gif/169.gif",
+    link: "https://myanimelist.net/anime/392/Yuu$B!y(BYuu$B!y(BHakusho",
+  },
+  {
+    name: "AD Police",
+    gif: "img/gif/170.gif",
+    link: "https://myanimelist.net/anime/1346/AD_Police",
+  },
+  {
+    name: "Outlaw Star",
+    gif: "img/gif/171.gif",
+    link: "https://myanimelist.net/anime/400/Seihou_Bukyou_Outlaw_Star",
+  },
+  {
+    name: "Omoide Poroporo",
+    gif: "img/gif/172.gif",
+    link: "https://myanimelist.net/anime/1029/Omoide_Poroporo",
+  },
+  {
+    name: "Maison Ikkoku",
+    gif: "img/gif/173.gif",
+    link: "https://myanimelist.net/anime/1453/Maison_Ikkoku",
+  },
+  {
+    name: "Hajime no Ippo",
+    gif: "img/gif/174.gif",
+    link: "https://myanimelist.net/anime/263/Hajime_no_Ippo",
   }
 ];
 

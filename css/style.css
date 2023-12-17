@@ -26,6 +26,7 @@
 /* disable text selection on certain elements */
 .window-header,
 .window-header span,
+.window-header a,
 .menubar,
 .menubar-content,
 .menubar-item {
@@ -52,6 +53,7 @@ html {
   -moz-user-select: none;
   -o-user-select: none;
   user-select: none;
+  overscroll-behavior: none;
 }
 
 body,
@@ -60,11 +62,12 @@ body,
   width: 100%;
   font-family: "Geneva", sans-serif;
   font-size: 16pt;
-  background: url("../img/wallpaper.png");
+  background: url("../img/blank.png");
   background-size: cover;
   background-position: center;
   margin: 0;
   padding: 0;
+  overscroll-behavior: none;
 }
 
 #random {
@@ -196,7 +199,7 @@ a:visited {
 }
 
 .menubar-content {
-  margin-left: 22px;
+  margin-left: 12px;
   display: flex;
   align-items: center;
   flex-direction: row;
@@ -306,6 +309,17 @@ a:visited {
 
 #edit-dropdown > div:nth-child(8) > a {
   padding-right: 12px;
+}
+
+#clock-container {
+  margin-left: auto;
+  margin-right: 12px;
+  padding-bottom: 2px;
+}
+
+#clock:active {
+  background: #fff;
+  color: #000;
 }
 
 .sysinfo-columns {
@@ -432,6 +446,11 @@ a:visited {
   cursor: default;
 }
 
+.gif-source,
+.gif-source a {
+  color: rgba(0,0,0,0.5);
+}
+
 .source-label {
   pointer-events: all !important;
 }
@@ -450,9 +469,13 @@ a:visited {
   position: fixed;
   background: #fff;
   color: #fff;
-  display: block;
-  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 160%;
   width: 100vw;
+  max-width: 102.5%;
   z-index: 0;
   font-size: 12px;
   font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial,sans-serif;
