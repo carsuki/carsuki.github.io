@@ -773,6 +773,11 @@ const randomgifs = [
     name: "Unknown",
     gif: "img/gif/176.gif",
     link: "",
+  },
+  {
+    name: "Neon Genesis Evangelion",
+    gif: "img/gif/177.gif",
+    link: "https://myanimelist.net/anime/30/Neon_Genesis_Evangelion",
   }
 ];
 
