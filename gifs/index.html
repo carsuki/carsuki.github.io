@@ -28,7 +28,7 @@
     <meta name="twitter:title" content="gif library - carsuki" />
     <meta
       name="twitter:description"
-      content="Utterly insane internet person"
+      content='Developer interested in the web and iOS." —Man Who Does Not Exist'
     />
     <meta
       name="twitter:image"
@@ -40,18 +40,14 @@
     <script src="../js/loadcss.js"></script>
 
     <!-- styles -->
+    <link rel="stylesheet" href="/gifs/loader.css" media="print" onload="this.media='all'; this.onload=null;">
     <link rel="stylesheet" href="../css/style.css" media="print" onload="this.media='all'; this.onload=null;">
     <link rel="stylesheet" href="../css/mobile.css" media="print" onload="this.media='all'; this.onload=null;">
     <link rel="stylesheet" href="/gifs/style-overrides.css" media="print" onload="this.media='all'; this.onload=null;">
     <link rel="stylesheet" href="/gifs/mobile-overrides.css" media="print" onload="this.media='all'; this.onload=null;">
 
     <!-- javascript -->
-    <!-- <script src="js/randomgif.js"></script>
-    <script src="js/assigngif.js" defer></script>
-    <script src="js/randomsplash.js" defer></script>
-    <script src="js/modal.js" defer></script>
-    <script src="js/eyeballtools.js" defer></script>
-    <script src="js/drinkmaker.js" defer></script> -->
+    <script src="../js/loader.js"></script>
   </head>
 
   <body>
@@ -59,6 +55,14 @@
     <!-- windows will go here -->
     
   </body>
+  <div class="loading-screen" id="loading">
+    <div class="welcome-to-macintosh">
+      <div id="welcome-icon-column">
+        <img src="../img/loading.gif" style="width: 32px;">
+      </div>
+      <p style="margin-top: 16px;">A few moments, please<span class="dots"><span>.</span><span>.</span><span>.</span></span></p>
+    </div>
+  </div>
 </html>
 
 <!-- gif scripts -->

@@ -665,7 +665,7 @@ const randomgifs = [
     link: "",
   },
   {
-    name: "Unknown",
+    name: "Unknown?",
     gif: "img/gif/155.gif",
     link: "http://web.archive.org/web/20130606083014/http://www.kanyewest.com:80/",
   },

@@ -127,14 +127,19 @@
             <div class="item-link-container">
               <a onclick="mainwindow();">Main Window</a>
             </div>
+            <!--
             <div class="item-link-container">
               <a onclick="player();">Now Playing</a>
+            </div>
+            -->
+            <div class="item-link-container">
+              <a onclick="aboutSite();">About This Website...</a>
             </div>
           </div>
         </div>
       </div>
       <div class="menubar-item-container" id="clock-container">
-        <span class="menubar-item" id="clock">Clock failed!</span>
+        <span class="menubar-item" id="clock">Clock loading...</span>
       </div>
     </div>
     
@@ -218,6 +223,31 @@
         </div>
       </div>
     </div>
+    
+    <div class="window box-shadow" id="about-this-website" style="width: 300px;">
+      <div class="window-header">
+        <button class="window-close-button" onclick="this.parentNode.parentNode.style.display = 'none';"></button>
+        <span>About This Website</span>
+      </div>
+      <div class="window-main">
+        <div class="text-container">
+          <h1 style="margin-top: 8px;">Questions</h1>
+          <h2>What is this?</h2>
+          <p>my personal site. it's supposed to look like a somewhat faithful recreation of a Macintosh Plus running System 7 (with a couple liberties taken)</p>
+          <h2>Why an old Mac?</h2>
+          <p>I like Macs and I use a Mac. and I think there are more than enough websites out there that look like Windows 98!</p>
+          <h2>So what can I do here?</h2>
+          <p style="margin-bottom: 2px;">honestly not much right now. aesthetics are a lot easier than thinking of actual content for this place...</p>
+          <p style="margin-bottom: 0px;"">you can drag the windows around, look at the different menu options, and check out the GIF library under Extras. in there you can see every GIF in use on the site. (you get a random background each time this page loads)</p>
+          
+          <h1>Acknowledgements</h1>
+          <p class="list-p">-all Mac icons/assets obviously belong to Apple</p>
+          <p class="list-p">-credit for every GIF that's known to me is in the <a href="/gifs">library</a></p>
+          <p class="list-p">-<a href="https://infinitemac.org/">infinite mac</a> as a convenient visual reference</p>
+          <p class="list-p">-<a href="https://impossiblue.github.io/log/150406/index.html">Bjorn Sortland</a> for already animating the Mac wristwatch icons so I didn't have to
+        </div>
+      </div>
+    </div>
   </div>
   <!-- print document -->
   <div id="print-doc" style="color: #fff;">
@@ -242,6 +272,7 @@
 var aboutWin = document.getElementById("about-this-macintosh")
 var playerWin = document.getElementById("now-playing")
 var mainWin = document.getElementById("main-window")
+var aboutSiteWin = document.getElementById("about-this-website")
 
 // z-index of highest window
 ztop = 1;
@@ -333,6 +364,11 @@ function mainwindow() {
   mainWin.style.zIndex = ++ztop;
   mainWin.style.display = "block";
 }
+
+function aboutSite() {
+  aboutSiteWin.style.zIndex = ++ztop;
+  aboutSiteWin.style.display = "block";
+}
 </script>
 
 <!-- fallback background -->
@@ -366,21 +402,25 @@ document.addEventListener("DOMContentLoaded", function(event) {
 <!-- clock -->
 
 <script>
-function startTime() {
-  const time = new Date();
-  let h = time.getHours();
-  let m = time.getMinutes();
-  let session = "AM";
-  if(h == 0){
-      h = 12;
-      session = "AM";
-  }
-  if(h > 12){
+  function startTime() {
+    const time = new Date();
+    var h = time.getHours();
+    var m = time.getMinutes();
+    var TwentyFourHour = time.getHours();
+    var period = 'PM'
+    if (m < 10) {
+      m = "0" + m;
+    }
+    if (h > 12) {
       h = h - 12;
-      session = "PM";
-   }
-  m = checkTime(m);
-  document.getElementById('clock').textContent =  h + ":" + m + " " + session;
+    }   
+    if(h==0){ 
+      h=12;
+    }
+    if(TwentyFourHour < 12) {
+      period = 'AM';
+    }
+  document.getElementById('clock').textContent =  h + ":" + m + " " + period;
   setTimeout(startTime, 1000);
 }
 
