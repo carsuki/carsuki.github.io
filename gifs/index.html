@@ -49,6 +49,36 @@
     <!-- javascript -->
     <script src="../js/loader.js"></script>
   </head>
+  
+  <style>
+    @font-face {
+      font-family: "Chicago";
+      src: url("../font/ChiKareGo2.ttf");
+      font-display: swap;
+    }
+    /* ellipsis animation */
+    @keyframes dots-1 { from { opacity: 0; } 25% { opacity: 1; } }
+    @keyframes dots-2 { from { opacity: 0; } 50% { opacity: 1; } }
+    @keyframes dots-3 { from { opacity: 0; } 75% { opacity: 1; } }
+    @-webkit-keyframes dots-1 { from { opacity: 0; } 25% { opacity: 1; } }
+    @-webkit-keyframes dots-2 { from { opacity: 0; } 50% { opacity: 1; } }
+    @-webkit-keyframes dots-3 { from { opacity: 0; } 75% { opacity: 1; } }
+    
+    .dots span {
+      animation: dots-1 1s infinite steps(1);
+      -webkit-animation: dots-1 1s infinite steps(1);
+    }
+    
+    .dots span:first-child + span {
+      animation-name: dots-2;
+      -webkit-animation-name: dots-2;
+    }
+    
+    .dots span:first-child + span + span {
+      animation-name: dots-3;
+      -webkit-animation-name: dots-3;
+    }
+  </style>
 
   <body>
     
@@ -59,7 +89,7 @@
   background-position: center;image-rendering: pixelated;image-rendering: crisp-edges;min-height: 100vh;min-width: 100vw;position: absolute;z-index: 99;
   top: 0;left: 0;">
     <div class="welcome-to-macintosh" style="background: #fff;width: 70%;margin: 0 auto;border: 1px solid #000;margin-top: 15vh;-webkit-box-shadow: 4px 4px 0px 0px rgba(0,0,0,1);-moz-box-shadow: 4px 4px 0px 0px rgba(0,0,0,1);box-shadow: 4px 4px 0px 0px rgba(0,0,0,1);font-family: Chicago;padding: 40px 50px 100px 50px;display: flex;flex-direction: row;flex-wrap: wrap;">
-      <div id="welcome-icon-column">
+      <div id="welcome-icon-column" style="flex-basis: 35%;">
         <img src="../img/loading.gif" style="width: 32px;">
       </div>
       <p style="margin-top: 16px;">A few moments, please<span class="dots"><span>.</span><span>.</span><span>.</span></span></p>
