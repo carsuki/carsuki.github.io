@@ -934,6 +934,12 @@ const randomgifs = [
     gif: "img/mp4/178.mp4",
     link: "https://myanimelist.net/anime/650/Gunsmith_Cats",
     number: "178",
+  },
+  {
+    name: "Perfect Blue",
+    gif: "img/mp4/179.mp4",
+    link: "https://myanimelist.net/anime/437/Perfect_Blue",
+    number: "179",
   }
 ];
 
