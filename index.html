@@ -42,11 +42,12 @@
     <!-- styles -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/mobile.css" media="print" onload="this.media='all'; this.onload=null;">
+    <link rel="stylesheet" href="css/print.css" media="print">
 
-    <script src="js/musicplayer.js"></script>
     <!-- javascript -->
     <!-- <script src="js/randomgif.js"></script>
     <script src="js/assigngif.js" defer></script>
+    <script src="js/musicplayer.js"></script>
     <script src="js/randomsplash.js" defer></script>
     <script src="js/modal.js" defer></script>
     <script src="js/eyeballtools.js" defer></script>
@@ -143,7 +144,9 @@
       </div>
     </div>
     
-    <img src="" id="random">
+    <video autoplay loop muted playsinline id="random">
+      <source src="" type="video/mp4">
+    </video>
     
     <!-- windows -->
     

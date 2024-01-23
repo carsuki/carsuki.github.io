@@ -5,14 +5,18 @@ body {
 	background-position: center;
 	image-rendering: pixelated;
 	image-rendering: crisp-edges;
-	height: auto !important;
-	display: flex !important;
+	min-width: 100%;
+	min-height: 100%;
+	overflow: auto;
+}
+
+#gif-container {
+	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-evenly;
 	row-gap: 20px;
 	column-gap: 10px;
 	padding: 20px;
-	max-width: calc(100vw - 40px);
 }
 
 .window {
@@ -24,6 +28,11 @@ body {
 	width: auto;
 	display: inline-flex;
 	flex-direction: column;
+}
+
+.window-header {
+	background-color: #fff;
+	background-image: url("../img/window-stripe.png");
 }
 
 .window-header a {
@@ -40,21 +49,9 @@ body {
   max-width: 75%;
 }
 
-.window img {
+.window video {
 	max-height: calc(100% - 20px);
 	height: 100%;
-}
-
-.window:has(img[src*="/8.gif"]) {
-	width: 145px;
-}
-
-.window:has(img[src*="/44.gif"]) {
-	width: 140px;
-}
-
-.window:has(img[src*="/83.gif"]) {
-	width: 210px;
 }
 
 .img-link {

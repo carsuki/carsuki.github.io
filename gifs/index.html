@@ -40,10 +40,11 @@
     <script src="../js/loadcss.js"></script>
 
     <!-- styles -->
-    <!-- <link rel="stylesheet" href="/gifs/loader.css" media="print" onload="this.media='all'; this.onload=null;"> -->
+    <link rel="stylesheet" href="/gifs/loader.css" media="print" onload="this.media='all'; this.onload=null;">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/mobile.css" media="print" onload="this.media='all'; this.onload=null;">
     <link rel="stylesheet" href="/gifs/style-overrides.css" media="print" onload="this.media='all'; this.onload=null;">
+    <link rel="stylesheet" href="/gifs/gif-overrides.css" media="print" onload="this.media='all'; this.onload=null;">
     <link rel="stylesheet" href="/gifs/mobile-overrides.css" media="print" onload="this.media='all'; this.onload=null;">
   </head>
   
@@ -79,6 +80,9 @@
   
   <!-- javascript -->
   <script src="../js/loader.js"></script>
+  
+  <!-- gif scripts -->
+  <script src="../js/randomgif.js"></script>
 
   <div class="loading-screen" id="loading" style="background-image: url('../img/wallpaper.png');background-repeat: repeat;background-size: 3px;
   background-position: center;image-rendering: pixelated;image-rendering: crisp-edges;min-height: 100vh;min-width: 100vw;position: absolute;z-index: 99;
@@ -91,24 +95,14 @@
     </div>
   </div>
   <body>
-    
-    <!-- windows will go here -->
-    
+    <div id="gif-container">
+      <!-- windows will go here -->
+    </div>
   </body>
 </html>
 
-<!-- gif scripts -->
-<script src="../js/randomgif.js"></script>
-
-<!-- vercel analytics -->
+<!-- vercel analytics 
 <script defer src="../_vercel/insights/script.js"></script>
+-->
 
 <script src="../js/shufflegifs.js"></script>
-
-<!-- fix page padding after images load -->
-<style>
-  body {
-    padding: 20px;
-    height: auto !important;
-  }
-</style>

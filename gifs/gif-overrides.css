@@ -1,0 +1,32 @@
+/* manual gif sizing overrides (until I can figure out why some windows don't conform to their content) */
+#win8 {
+	width: 143px;
+}
+
+#win27 {
+	width: 139px;
+}
+
+#win30 {
+	width: 157px;
+}
+
+#win44 {
+	width: 131px;
+}
+
+#win49 {
+	width: 155px;
+}
+
+#win83 {
+	width: 210px;
+}
+
+#win120 {
+	width: 211px;
+}
+
+#win121 {
+	width: 227px;
+}

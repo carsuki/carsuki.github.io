@@ -12,37 +12,51 @@ function shuffle (array) {
 shuffle(randomgifs);
 
 for (let i = 1; i < gifCount; i++) {
-  
   var id = i;
+  var gifWindow = document.createElement("div");
+  var gifWinHead = document.createElement("div");
+  var gifWinHeadText = document.createElement("a");
+  var currentNumber = randomgifs[id].number;
+  var gifWindowId = "video" + currentNumber;
+  var selector = '#video' + currentNumber;
+  
+  if (i === gifCount - 1) {
+    var vidSelector = '#win' + randomgifs[gifCount - 2].number;
+    document.querySelector(vidSelector).classList.add("win-final");
+  } else {
   
   function navigate(url) {
     window.location.href = url;
   }
   
   // creation of a window
-  var gifWindow = document.createElement("div");
   gifWindow.classList.add("window", "box-shadow");
   
-  var gifWinHead = document.createElement("div");
   gifWinHead.classList.add("window-header");
   gifWindow.appendChild(gifWinHead);
   
-  var gifWinHeadText = document.createElement("a");
   gifWinHeadText.textContent = randomgifs[id].name;
   gifWinHeadText.href = randomgifs[id].link;
   gifWinHead.appendChild(gifWinHeadText);
   
-  // fill window with gif
-  gifWindow.setAttribute("id", i); 
-
-  var gifWinImg = document.createElement("img");
-  gifWinImg.src = '../' + randomgifs[id].gif;
-  gifWinImg.href = randomgifs[id].gif;
+  // fill window with gif (mp4)
+  gifWindow.setAttribute("id", "win" + currentNumber); 
+  gifWindow.innerHTML += 
+  `<video preload="metadata" autoplay loop muted playsinline id="` + gifWindowId + `">
+  <source src =` + `../` + randomgifs[id].gif; + `" type="video/mp4">
+  </video>`
+  document.querySelector("#gif-container").appendChild(gifWindow);
   
-  gifWindow.appendChild(gifWinImg)
+  source = document.createElement("source");
+  source.src = '../' + randomgifs[id].gif;
+  source.type = "video/mp4";
   
-  document.body.append(gifWindow);
+  var currentVideo = document.querySelector("#video" + currentNumber);
+  currentVideo.appendChild(source);
+  currentVideo.load();
+  currentVideo.play();
+  };
 }
 
 var amount = document.querySelectorAll('a').length;
-console.log(amount + ' images loaded')
+console.log(amount + ' videos loaded')
