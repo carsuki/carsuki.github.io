@@ -526,6 +526,9 @@ a:hover,
   -webkit-user-select: none !important;
 }
 
-video::-webkit-media-controls-start-playback-button {
-    display: none;
+#intro-img {
+  border: 1px solid #000;
+  -webkit-box-shadow: 4px 4px 0px 0px rgba(0,0,0,1);
+  -moz-box-shadow: 4px 4px 0px 0px rgba(0,0,0,1);
+  box-shadow: 4px 4px 0px 0px rgba(0,0,0,1);
 }
