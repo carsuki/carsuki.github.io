@@ -940,6 +940,12 @@ const randomgifs = [
     gif: "img/mp4/179.mp4",
     link: "https://myanimelist.net/anime/437/Perfect_Blue",
     number: "179",
+  },
+  {
+    name: "Urusei Yatsura",
+    gif: "img/mp4/180.mp4",
+    link: "https://myanimelist.net/anime/1293/Urusei_Yatsura",
+    number: "180",
   }
 ];
 
