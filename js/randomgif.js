@@ -946,6 +946,18 @@ const randomgifs = [
     gif: "img/mp4/180.mp4",
     link: "https://myanimelist.net/anime/1293/Urusei_Yatsura",
     number: "180",
+  },
+  {
+    name: "Key The Metal Idol",
+    gif: "img/mp4/181.mp4",
+    link: "https://myanimelist.net/anime/1457/Key_the_Metal_Idol",
+    number: "181",
+  },
+  {
+    name: "The Vision of Escaflowne",
+    gif: "img/mp4/182.mp4",
+    link: "https://myanimelist.net/anime/182/Tenkuu_no_Escaflowne",
+    number: "182",
   }
 ];
 
